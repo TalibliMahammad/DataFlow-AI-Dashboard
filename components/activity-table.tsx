@@ -93,39 +93,40 @@ export function ActivityTable() {
   }, []);
 
   return (
-    <div className=" bg-card border border-border rounded-xl p-6">
-      <div className="mb-6">
-        <h3 className="text-lg font-semibold foreground">Recent Activities</h3>
-        <p className="text-sm text-muted-foreground">
-          {" "}
+    <div className="bg-card border border-border rounded-xl p-4 sm:p-6">
+      <div className="mb-4 sm:mb-6">
+        <h3 className="text-base sm:text-lg font-semibold text-foreground">Recent Activities</h3>
+        <p className="text-xs sm:text-sm text-muted-foreground">
           Latest events and updates from your analytics platform
         </p>
       </div>
 
       {/* Icons */}
-      <div className="space-y-3">
+      <div className="space-y-2 sm:space-y-3">
         {sortedActivities.map((activity) => (
           <div
             key={activity.id}
-            className="flex items-center gap-4 p-4 rounded-lg  bg-secondary/30 hover:bg-secondary/60 transition-colors duration-300 border border-border/50"
+            className="flex items-start sm:items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg bg-secondary/30 hover:bg-secondary/60 transition-colors duration-300 border border-border/50"
           >
-            <div className={`w-10 h-10 rounded-lg flex items-center justify-center shrink-0 ${getActivityColor(activity.type)}`}>{getActivityIcon(activity.type)}</div>
+            <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center shrink-0 ${getActivityColor(activity.type)}`}>
+              {getActivityIcon(activity.type)}
+            </div>
 
             {/* content */}
             <div className="flex-1 min-w-0">
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="text-sm font-semibold text-foreground">{activity.title}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{activity.description}</p>
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4">
+                <div className="min-w-0">
+                  <p className="text-xs sm:text-sm font-semibold text-foreground">{activity.title}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{activity.description}</p>
                 </div>
-                <span className="text-xs text-muted-foreground whitespace-nowrap">{activity.timestamp}</span>
+                <span className="text-xs text-muted-foreground whitespace-nowrap flex-shrink-0">{activity.timestamp}</span>
               </div>
             </div>
           </div>
         ))}
       </div>
 
-      <button className="w-full mt-6 py-2 px-4 rounded-lg text-sm font-medium text-primary hover:bg-primary/10 transition-colors duration-100   border border-primary/20">
+      <button className="w-full mt-4 sm:mt-6 py-2 px-4 rounded-lg text-xs sm:text-sm font-medium text-primary hover:bg-primary/10 transition-colors duration-100 border border-primary/20">
         View All Activity
       </button>
     </div>

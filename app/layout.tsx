@@ -6,7 +6,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="az">
-      <body className="bg-background text-foreground" style={styles.body}>
+      <body className="bg-background overflow-x-hidden" style={styles.body}>
         {children}
       </body>
     </html>

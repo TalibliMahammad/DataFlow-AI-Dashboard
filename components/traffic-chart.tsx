@@ -27,10 +27,10 @@ const data = [
 
 export function TrafficChart() {
   return (
-    <div className="bg-card border border-border rounded-xl p-6">
-      <div className="mb-6">
-        <h3 className="text-lg font-semibold text-foreground">Data Traffic</h3>
-        <p className="text-sm text-muted-foreground mt-1">
+    <div className="bg-card border border-border rounded-xl p-4 sm:p-6">
+      <div className="mb-4 sm:mb-6">
+        <h3 className="text-base sm:text-lg font-semibold text-foreground">Data Traffic</h3>
+        <p className="text-xs sm:text-sm text-muted-foreground mt-1">
           Real-time data ingestion over time
         </p>
       </div>
@@ -38,7 +38,7 @@ export function TrafficChart() {
       <ResponsiveContainer width="100%" height={300}>
         <AreaChart
           data={data}
-          margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+          margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
         >
           <defs>
             <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
@@ -50,11 +50,13 @@ export function TrafficChart() {
           <XAxis
             dataKey="name"
             stroke="hsl(var(--muted-foreground))"
-            style={{ fontSize: '12px' }}
+            style={{ fontSize: '11px' }}
+            tick={{ fontSize: 11 }}
           />
           <YAxis
             stroke="hsl(var(--muted-foreground))"
-            style={{ fontSize: '12px' }}
+            style={{ fontSize: '11px' }}
+            tick={{ fontSize: 11 }}
           />
           <Tooltip
             contentStyle={{
@@ -62,6 +64,7 @@ export function TrafficChart() {
               border: '1px solid hsl(var(--border))',
               borderRadius: '8px',
               color: 'hsl(var(--foreground))',
+              fontSize: '12px',
             }}
           />
           <Area

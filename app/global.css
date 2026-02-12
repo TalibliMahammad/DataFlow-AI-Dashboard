@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
 @theme {
   /* v0-dan gələn HSL dəyişənlərini v4-ün yeni sisteminə bağlayırıq */
   --color-background: hsl(var(--background));
@@ -25,6 +31,7 @@
 }
 
 :root {
+  
   --background: 0 0% 3.9%;
   --foreground: 0 0% 95%;
   --card: 0 0% 8%;
