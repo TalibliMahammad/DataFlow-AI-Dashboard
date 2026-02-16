@@ -1,24 +1,985 @@
-[00:00:01.072] Server  LOG     ✓ Ready in 826ms
-[00:00:28.082] Server  LOG     ✓ Compiled in 92ms
-[00:01:10.060] Server  LOG     ✓ Compiled in 83ms
-[00:01:33.684] Server  LOG     ✓ Compiled in 82ms
-[00:02:58.017] Server  LOG     ✓ Compiled in 44ms
-[00:03:52.950] Server  LOG     ✓ Compiled in 85ms
-[00:03:56.526] Server  LOG     ✓ Compiled in 122ms
-[00:04:03.115] Server  LOG     ✓ Compiled in 72ms
-[00:04:06.449] Server  LOG     ✓ Compiled in 92ms
-[00:04:11.590] Server  LOG     ✓ Compiled in 71ms
-[00:04:14.234] Server  LOG     ✓ Compiled in 60ms
-[00:04:27.328] Server  LOG     ✓ Compiled in 99ms
-[00:04:46.959] Server  LOG     ✓ Compiled in 55ms
-[00:04:55.592] Server  LOG     ✓ Compiled in 57ms
-[00:04:59.376] Server  LOG     ✓ Compiled in 70ms
-[00:05:03.217] Server  LOG     ✓ Compiled in 80ms
-[00:09:09.402] Server  LOG     ✓ Compiled in 24ms
-[00:09:15.574] Server  LOG     ✓ Compiled in 78ms
-[00:09:33.168] Server  LOG     ✓ Compiled in 93ms
-[00:10:37.562] Server  LOG     ✓ Compiled in 87ms
-[00:10:44.651] Server  LOG     ✓ Compiled in 43ms
-[00:10:45.878] Server  LOG     ✓ Compiled in 77ms
-[00:11:16.527] Server  LOG     ✓ Compiled in 92ms
-[00:14:36.157] Server  LOG     ✓ Compiled in 266ms
+[00:00:00.853] Server  LOG     ✓ Ready in 603ms
+[00:03:04.421] Browser LOG     Firebase login failed, checking local storage...
+[00:03:04.421] Browser LOG     Login attempt: {"email":"mtalibov489@gmail.com","password":"Mamedm123"}
+[00:04:07.137] Browser LOG     Firebase login failed, checking local storage...
+[00:05:34.979] Server  LOG     ✓ Compiled in 811ms
+[00:05:35.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:93:15
+Parsing ecmascript source code failed
+  91 |             alert: {
+  92 |               message: "Account created in Cloud & Local!",a
+> 93 |               type: "success",
+     |               ^^^^
+  94 |             },
+  95 |           });
+  96 |         } catch (error: any) {
+
+Unexpected token `type`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:35.515] Server  LOG     ✓ Compiled in 578ms
+[00:10:49.958] Server  LOG     ✓ Compiled in 106ms
+[00:11:03.013] Server  LOG     ✓ Compiled in 95ms
+[00:11:04.536] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.541] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.602] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.606] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.612] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.615] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.619] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.621] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.625] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.627] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.629] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.630] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.633] Server  LOG     ✓ Compiled in 268ms
+[00:11:04.640] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:04.644] Server  ERROR   ⨯ ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:05.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:08.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:11:1
+Module not found: Can't resolve 'console'
+   9 |   signOut,
+  10 | } from "firebase/auth";
+> 11 | import { log } from "console";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | type ViewType =
+  14 |   | "register"
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:09.846] Server  LOG     ✓ Compiled in 254ms
+[00:11:16.704] Server  LOG     ✓ Compiled in 25ms
+[00:11:21.369] Server  LOG     ✓ Compiled in 109ms
+[00:11:22.316] Browser ERROR   ./app/auth/store/useAuthStore.ts:107:29
+Parsing ecmascript source code failed
+  105 |           //   },
+  106 |           // });
+> 107 |           console.log(error "");
+      |                             ^^
+  108 |           
+  109 |         }
+  110 |       },
+
+Expected ',', got 'string literal'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:11:24.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:107:29
+Parsing ecmascript source code failed
+  105 |           //   },
+  106 |           // });
+> 107 |           console.log(error "sign");
+      |                             ^^^^^^
+  108 |           
+  109 |         }
+  110 |       },
+
+Expected ',', got 'string literal'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:11:27.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:107:29
+Parsing ecmascript source code failed
+  105 |           //   },
+  106 |           // });
+> 107 |           console.log(error "signUp e");
+      |                             ^^^^^^^^^^
+  108 |           
+  109 |         }
+  110 |       },
+
+Expected ',', got 'string literal'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:11:29.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:107:29
+Parsing ecmascript source code failed
+  105 |           //   },
+  106 |           // });
+> 107 |           console.log(error "signUp error");
+      |                             ^^^^^^^^^^^^^^
+  108 |           
+  109 |         }
+  110 |       },
+
+Expected ',', got 'string literal'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:12:32.800] Server  LOG     ✓ Compiled in 74ms
+[00:12:43.800] Server  LOG     ✓ Compiled in 95ms
+[00:12:44.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:102:66
+Parsing ecmascript source code failed
+  100 |             view: "login",
+  101 |             alert: {
+> 102 |               message: "Manual signup complete (Firebase error)"+,
+      |                                                                  ^
+  103 |               type: "error",
+  104 |             },
+  105 |           });
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:56.242] Server  LOG     ✓ Compiled in 77ms
+[00:43:27.547] Server  LOG     ✓ Compiled in 64ms
+[00:43:29.973] Server  LOG     ✓ Compiled in 20ms
+[00:43:42.866] Server  LOG     ✓ Compiled in 78ms
+[00:43:46.068] Server  LOG     ✓ Compiled in 80ms
+[00:43:49.479] Server  LOG     ✓ Compiled in 73ms
+[00:43:54.207] Server  LOG     ✓ Compiled in 74ms
+[00:44:48.764] Server  LOG     ✓ Compiled in 93ms
+[00:44:49.318] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise  => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:50.316] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise < => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:58.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise <St => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:59.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise <S => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:00.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise < => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:12.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise <st => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:14.316] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise <strin => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:16.316] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise <string. => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:19.318] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise <string> => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:20.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise <string/> => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:26.316] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise:any> => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:28.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise> => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:30.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise<boolean> => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:38.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual")Promise> => {
+     |                                                          ^^^^^^^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:40.895] Server  LOG     ✓ Compiled in 91ms
+[00:45:41.317] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:58
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |   signup: async (UserData, method: "firebase" | "manual"):Promise> => {
+     |                                                          ^
+  79 |   if (method === "firebase") {
+  80 |     try {
+  81 |       await createUserWithEmailAndPassword(auth, UserData.email, UserData.password);
+
+Expected '=>', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:44.110] Server  LOG     ✓ Compiled in 105ms
+[00:46:46.588] Server  LOG     ✓ Compiled in 74ms
+[00:46:50.743] Server  LOG     ✓ Compiled in 100ms
+[00:46:51.316] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:14
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |    Parameter 'UserData' implicitly has an 'any' type.
+     |              ^^^^^^^^^^
+  79 |
+  80 |       login: async (email, password) => {
+  81 |         // Öncə Firebase ilə yoxla
+
+Unexpected token `string literal`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:53.872] Server  LOG     ✓ Compiled in 86ms
+[00:46:54.318] Browser ERROR   ./app/auth/store/useAuthStore.ts:78:14
+Parsing ecmascript source code failed
+  76 |       },
+  77 |
+> 78 |    Parameter 'UserData' implicitly has an 'any' type.
+     |              ^^^^^^^^^^
+  79 |
+  80 |       login: async (email, password) => {
+  81 |         // Öncə Firebase ilə yoxla
+
+Unexpected token `string literal`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/store/useAuthStore.ts [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/store/useAuthStore.ts [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:47:10.620] Server  LOG     ✓ Compiled in 79ms
+[00:58:59.026] Server  LOG     ✓ Compiled in 163ms
+[00:58:59.316] Browser ERROR   ./app/auth/auth-signup-form.tsx:42:8
+Parsing ecmascript source code failed
+  40 |         email: email,
+  41 |         password: password,
+> 42 |       }çƏ);
+     |        ^^^^
+  43 |       setAlert({
+  44 |         message: "Account created successfully! Please login.",
+  45 |         type: "success",
+
+Expected ',', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth.card.tsx [Client Component Browser]
+    ./app/auth.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth.card.tsx [Client Component SSR]
+    ./app/auth.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:59:03.964] Server  LOG     ✓ Compiled in 16ms
+[00:59:05.600] Server  LOG     ✓ Compiled in 30ms
+[00:59:46.986] Browser LOG     Firebase login failed, checking local storage...
+[01:01:09.010] Server  LOG     ✓ Compiled in 52ms
+[01:02:14.563] Server  LOG     ✓ Compiled in 57ms
+[01:02:41.473] Server  LOG     ✓ Compiled in 13ms
+[01:02:42.966] Server  LOG     ✓ Compiled in 12ms
+[01:03:14.223] Server  LOG     ✓ Compiled in 64ms
+[01:03:25.936] Server  LOG     ✓ Compiled in 54ms
+[01:03:26.036] Browser ERROR   uncaughtError: ReferenceError: t is not defined
+[01:03:31.076] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:03:31.123] Server  LOG     ✓ Compiled in 51ms
+[01:03:37.080] Server  LOG     ✓ Compiled in 49ms
+[01:03:58.010] Server  LOG     ✓ Compiled in 32ms
+[01:04:01.145] Server  LOG     ✓ Compiled in 55ms
+[01:08:59.994] Browser LOG     Firebase login failed, checking local storage...

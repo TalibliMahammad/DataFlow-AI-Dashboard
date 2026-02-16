@@ -30,7 +30,7 @@ interface AuthState {
   view: ViewType;
   registeredUser: UserData | null;
   setView: (view: ViewType) => void;
-  signup: (data: UserData) => Promise<void>;
+  signup: (data: UserData, method: "firebase" | "manual") => Promise<void>;
   login: (email: string, pass: string) => Promise<boolean>;
   logout: () => Promise<void>;
   alert: { message: string; type: "success" | "error" } | null;
@@ -75,33 +75,37 @@ export const useAuthStore = create<AuthState>()(
         }
       },
 
-      signup: async (userData) => {
-        try {
-          // Firebase-ə yazırıq
-          await createUserWithEmailAndPassword(
-            auth,
-            userData.email,
-            userData.password,
-          );
+      signup: async (userData: UserData, method: "firebase" | "manual") => {
+        if (method === "firebase") {
+          try {
+            await createUserWithEmailAndPassword(
+              auth,
+              userData.email,
+              userData.password,
+            );
 
-          // Uğurlu olsa, sənin manual state-ini də doldururuq
+            set({
+              registeredUser: userData,
+              view: "login",
+              alert: {
+                message: "Account created in Firebase!",
+                type: "success",
+              },
+            });
+          } catch (error: any) {
+            set({
+              alert: {
+                message: "Firebase error: " + error.message,
+                type: "error",
+              },
+            });
+          }
+        } else {
+          // Tamamilə Manual - Heç bir Firebase çağırışı yoxdur
           set({
             registeredUser: userData,
             view: "login",
-            alert: {
-              message: "Account created in Cloud & Local!",
-              type: "success",
-            },
-          });
-        } catch (error: any) {
-          // Firebase xətası olsa belə (məs. internet yoxdursa), manual qeydiyyatı bitiririk
-          set({
-            registeredUser: userData,
-            view: "login",
-            alert: {
-              message: "Manual signup complete (Firebase error)",
-              type: "error",
-            },
+            alert: { message: "Manual signup successful!", type: "success" },
           });
         }
       },

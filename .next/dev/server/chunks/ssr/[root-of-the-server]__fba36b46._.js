@@ -447,27 +447,34 @@ const useAuthStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
                 return false;
             }
         },
-        signup: async (userData)=>{
-            try {
-                // Firebase-ə yazırıq
-                await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createUserWithEmailAndPassword"])(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auth"], userData.email, userData.password);
-                // Uğurlu olsa, sənin manual state-ini də doldururuq
+        signup: async (userData, method)=>{
+            if (method === "firebase") {
+                try {
+                    await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createUserWithEmailAndPassword"])(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auth"], userData.email, userData.password);
+                    set({
+                        registeredUser: userData,
+                        view: "login",
+                        alert: {
+                            message: "Account created in Firebase!",
+                            type: "success"
+                        }
+                    });
+                } catch (error) {
+                    set({
+                        alert: {
+                            message: "Firebase error: " + error.message,
+                            type: "error"
+                        }
+                    });
+                }
+            } else {
+                // Tamamilə Manual - Heç bir Firebase çağırışı yoxdur
                 set({
                     registeredUser: userData,
                     view: "login",
                     alert: {
-                        message: "Account created in Cloud & Local!",
+                        message: "Manual signup successful!",
                         type: "success"
-                    }
-                });
-            } catch (error) {
-                // Firebase xətası olsa belə (məs. internet yoxdursa), manual qeydiyyatı bitiririk
-                set({
-                    registeredUser: userData,
-                    view: "login",
-                    alert: {
-                        message: "Manual signup complete (Firebase error)",
-                        type: "error"
                     }
                 });
             }
@@ -1264,6 +1271,7 @@ function AuthSignupForm() {
     const loginWithGoogle = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$auth$2f$store$2f$useAuthStore$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAuthStore"])((state)=>state.loginWithGoogle);
     const handleSubmit = async (e)=>{
         e.preventDefault();
+        setIsLoading(true);
         if (password !== confirmPassword) {
             setAlert({
                 message: "Passwords do not match",
@@ -1284,12 +1292,11 @@ function AuthSignupForm() {
                 fullName: name,
                 email: email,
                 password: password
-            });
+            }, "manual");
             setAlert({
                 message: "Account created successfully! Please login.",
                 type: "success"
             });
-            setIsLoading(false);
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1308,7 +1315,7 @@ function AuthSignupForm() {
                                 children: "Full Name"
                             }, void 0, false, {
                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                lineNumber: 57,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1320,13 +1327,13 @@ function AuthSignupForm() {
                                 className: "bg-white/5 border-white/10 placeholder:text-foreground/40 focus:border-white/20 focus:bg-white/10"
                             }, void 0, false, {
                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                lineNumber: 64,
+                                lineNumber: 65,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/auth/auth-signup-form.tsx",
-                        lineNumber: 56,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1337,7 +1344,7 @@ function AuthSignupForm() {
                                 children: " Email"
                             }, void 0, false, {
                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                lineNumber: 75,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1349,13 +1356,13 @@ function AuthSignupForm() {
                                 className: "bg-white/5 border-white/10 placeholder:text-foreground/40 focus:border-white/20   focus:bg-white/10"
                             }, void 0, false, {
                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                lineNumber: 76,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/auth/auth-signup-form.tsx",
-                        lineNumber: 74,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1366,7 +1373,7 @@ function AuthSignupForm() {
                                 children: " Password"
                             }, void 0, false, {
                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                lineNumber: 87,
+                                lineNumber: 88,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1382,13 +1389,13 @@ function AuthSignupForm() {
                                 }`
                             }, void 0, false, {
                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                lineNumber: 88,
+                                lineNumber: 89,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/auth/auth-signup-form.tsx",
-                        lineNumber: 86,
+                        lineNumber: 87,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1399,7 +1406,7 @@ function AuthSignupForm() {
                                 children: " Confirm Password"
                             }, void 0, false, {
                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                lineNumber: 106,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1415,7 +1422,7 @@ function AuthSignupForm() {
                                 }`
                             }, void 0, false, {
                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                lineNumber: 107,
+                                lineNumber: 108,
                                 columnNumber: 11
                             }, this),
                             password.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1428,7 +1435,7 @@ function AuthSignupForm() {
                                                 className: `w-2.5 h-2.5 rounded-full transition-all duration-500 ${isLongEnough ? "bg-green-500 shadow-[0_0_8px_#22c55e]" : "bg-red-500 shadow-[0_0_8px_#ef4444]"}`
                                             }, void 0, false, {
                                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                                lineNumber: 126,
+                                                lineNumber: 127,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1436,13 +1443,13 @@ function AuthSignupForm() {
                                                 children: "Minimum 8 simvol"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                                lineNumber: 133,
+                                                lineNumber: 134,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                        lineNumber: 125,
+                                        lineNumber: 126,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1452,7 +1459,7 @@ function AuthSignupForm() {
                                                 className: `w-2.5 h-2.5 rounded-full transition-all duration-500 ${isMatching ? "bg-green-500 shadow-[0_0_8px_#22c55e]" : "bg-red-500 shadow-[0_0_8px_#ef4444]"}`
                                             }, void 0, false, {
                                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                                lineNumber: 142,
+                                                lineNumber: 143,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1460,25 +1467,25 @@ function AuthSignupForm() {
                                                 children: "Şifrələr eynidir"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                                lineNumber: 149,
+                                                lineNumber: 150,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                        lineNumber: 141,
+                                        lineNumber: 142,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                                lineNumber: 123,
+                                lineNumber: 124,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/auth/auth-signup-form.tsx",
-                        lineNumber: 105,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1488,13 +1495,13 @@ function AuthSignupForm() {
                         children: isLoading ? "Creating Account" : "Create Account"
                     }, void 0, false, {
                         fileName: "[project]/app/auth/auth-signup-form.tsx",
-                        lineNumber: 158,
+                        lineNumber: 159,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                lineNumber: 55,
+                lineNumber: 56,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1506,12 +1513,12 @@ function AuthSignupForm() {
                             className: "w-full border border-white/10"
                         }, void 0, false, {
                             fileName: "[project]/app/auth/auth-signup-form.tsx",
-                            lineNumber: 169,
+                            lineNumber: 170,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/auth/auth-signup-form.tsx",
-                        lineNumber: 168,
+                        lineNumber: 169,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1524,18 +1531,18 @@ function AuthSignupForm() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/auth/auth-signup-form.tsx",
-                            lineNumber: 172,
+                            lineNumber: 173,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/auth/auth-signup-form.tsx",
-                        lineNumber: 171,
+                        lineNumber: 172,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                lineNumber: 167,
+                lineNumber: 168,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1546,7 +1553,7 @@ function AuthSignupForm() {
                         className: "w-4 h-4"
                     }, void 0, false, {
                         fileName: "[project]/app/auth/auth-signup-form.tsx",
-                        lineNumber: 183,
+                        lineNumber: 184,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1554,19 +1561,19 @@ function AuthSignupForm() {
                         children: " Continue with Google"
                     }, void 0, false, {
                         fileName: "[project]/app/auth/auth-signup-form.tsx",
-                        lineNumber: 184,
+                        lineNumber: 185,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/auth/auth-signup-form.tsx",
-                lineNumber: 179,
+                lineNumber: 180,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/auth/auth-signup-form.tsx",
-        lineNumber: 54,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 }

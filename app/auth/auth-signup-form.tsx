@@ -20,6 +20,7 @@ export function AuthSignupForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
     if (password !== confirmPassword) {
       setAlert({ message: "Passwords do not match", type: "error" });
       return;
@@ -39,14 +40,14 @@ export function AuthSignupForm() {
         fullName: name,
         email: email,
         password: password,
-      });
+      },"manual");
       setAlert({
         message: "Account created successfully! Please login.",
         type: "success",
       });
 
-      setIsLoading(false);
     }
+    
   };
 
 
