@@ -33,11 +33,11 @@ export default function Dashboard() {
     <>
     <CustomAlert/>
 
-   { view === "dashboard"  ? <div className="flex min-h-screen bg-background flex-col lg:flex-row">
+   { view === "dashboard"  ? <div className="flex h-screen bg-background  flex-col lg:flex-row">
    
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
 
-      <main className="flex-1 lg:ml-64 flex flex-col overflow-hidden">
+      <main className="flex-1 lg:ml-64 flex flex-col h-screen overflow-hidden  ">
         <header className="bg-card border-b border-border sticky top-0 z-10 flex-shrink-0">
           <div className="px-3 sm:px-4 lg:px-6 py-3 sm:py-4 lg:py-5 flex flex-col sm:flex-row items-start sm:items-center justify-start lg:justify-between gap-3 sm:gap-4">
             <div>
@@ -76,7 +76,7 @@ export default function Dashboard() {
           </div>
         </header>
 
-        <div className="flex-1 overflow-y-auto p-3 sm:p-4 lg:p-6">
+        <div className="flex-1 overflow-y-auto p-3  no-scrollbar sm:p-4 lg:p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 mb-4 sm:mb-6 mt-10">
             <MetricCard
               title="Total Users"

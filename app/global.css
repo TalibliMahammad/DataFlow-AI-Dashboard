@@ -95,3 +95,17 @@
   animation: aurora 15s ease-in-out infinite !important;
   will-change: transform; /* Brauzerə animasiya üçün güc veririk */
 }
+
+/* globals.css */
+
+/* globals.css */
+
+/* Bütün brauzerlərdə scroll-u tamamilə söndürmək üçün klass */
+.no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none !important;  /* IE və Edge */
+    scrollbar-width: none !important;  /* Firefox */
+}
