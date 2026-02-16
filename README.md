@@ -18,12 +18,15 @@ Fully responsive layout (Mobile, Tablet, Desktop).
 
 🤖 AI Integration Ready: Structured architecture designed to fetch and display AI-driven analytics and assistant responses.
 
-Technology,Usage & Purpose
-Next.js 14,Modern Framework (App Router) for SEO & Performance
-TypeScript,Static typing for cleaner and more maintainable code
-Tailwind CSS,Utility-first CSS for rapid & responsive UI development
-Zustand,Lightweight and scalable Global State Management
-Firebase,"Robust Backend-as-a-Service, Real-time DB & Cloud Auth"
+### 🛠️ Tech Stack & Usage
+
+| Technology | Usage & Purpose |
+| :--- | :--- |
+| **Next.js 14** | Modern Framework (App Router) for SEO & Performance |
+| **TypeScript** | Static typing for cleaner and more maintainable code |
+| **Tailwind CSS** | Utility-first CSS for rapid & responsive UI development |
+| **Zustand** | Lightweight and scalable Global State Management |
+| **Firebase** | Robust Backend-as-a-Service, Real-time DB & Cloud Auth |
 
 
 
