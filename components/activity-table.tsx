@@ -1,6 +1,7 @@
 "use client";
 
-import { useAuthStore } from "@/app/auth/store/useAuthStore";
+
+import { useAuthStore } from "@/store/useAuthStore";
 import { log } from "console";
 import { div } from "framer-motion/client";
 import {

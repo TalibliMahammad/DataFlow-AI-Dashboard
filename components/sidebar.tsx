@@ -1,7 +1,8 @@
 "use client";
 
-import { useAuthStore } from "@/app/auth/store/useAuthStore";
 import { cn } from "@/lib/utils";
+import { useAuthStore } from "@/store/useAuthStore";
+import { useRouter } from "next/navigation";
 import {
   BarChart3,
   Home,
@@ -22,6 +23,7 @@ import { usePathname } from "next/navigation";
 export function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (open: boolean) => void }) {
   const pathname = usePathname();
     const {logout} = useAuthStore((state) => state);
+    const router = useRouter();
 
 
   const navigationItems = [
@@ -36,6 +38,19 @@ export function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (op
     { name: "Settings", href: "/settings", icon: Settings },
     { name: "Help", href: "/help", icon: HelpCircle },
   ];
+  
+
+const handleLogout = async () => {
+  const success = await logout();
+
+  if (success) {
+    setTimeout(()=>{
+router.replace("/auth/login");
+
+    }, 2000);  
+  }
+};
+
 
   return (
     <>
@@ -115,7 +130,7 @@ export function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (op
 
         {/* Logout Button - Fixed at bottom */}
         <div className="p-4 border-t border-border flex-shrink-0">
-          <button onClick={()=>logout()} className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-200">
+          <button onClick={handleLogout} className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-200">
             <LogOut className="w-5 h-5" />
             <span className="text-sm font-medium">Sign Out</span>
           </button>

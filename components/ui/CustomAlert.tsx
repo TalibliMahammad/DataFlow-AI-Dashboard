@@ -3,7 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 
 import { AlertCircle, CheckCircle2, X } from "lucide-react";
-import { useAuthStore } from "@/app/auth/store/useAuthStore";
+import { useAuthStore } from "@/store/useAuthStore";
+
 
 export const CustomAlert = () => {
   const { alert, setAlert } = useAuthStore();

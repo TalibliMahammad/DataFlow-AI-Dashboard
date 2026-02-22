@@ -3,11 +3,18 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 
 import { Database } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import { AuthSignupForm } from "./auth-signup-form";
+
 import { AuthLoginForm } from "./auth-login.form";
-import { useAuthStore } from "./store/useAuthStore";
+import { useAuthStore } from "@/store/useAuthStore";
+import { AuthSignupForm } from "./auth-signup-form";
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { getRedirectResult } from "firebase/auth";
+import { auth } from "@/lib/firebase";
+import { log } from "console";
+
 
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -46,17 +53,25 @@ const contentVariants = {
   },
 };
 
-export function AuthCard() {
-  const {view,setView} = useAuthStore((state) => state);
 
-const currentTab = view === "register" ? "signup" : "login";
 
-  const handleTabChange = (value: string) => {
 
-    setView(value === "signup" ? "register" : "login");
-  };
+
+
+export function AuthCard({children}: {children?: React.ReactNode}) {
+  const {view} = useAuthStore((state) => state);
+  const router = useRouter();
+  const pathname = usePathname();
+
+const currentTab = pathname.includes("register") ?"signup" : "login";
+
+
+
+
 
   return (
+    <div className="relative flex justify-center items-center min-h-screen  overflow-hidden p-4">
+
     <motion.div
       variants={cardVariants}
       initial="hidden"
@@ -80,7 +95,7 @@ const currentTab = view === "register" ? "signup" : "login";
       </motion.div>
 
       <motion.div variants={contentVariants} initial="hidden" animate="visible">
-        <Tabs value={currentTab} onValueChange={handleTabChange} className="w-full">
+        <Tabs value={currentTab} onValueChange={(val)=>router.push(val === "login" ? "/auth/login" : "/auth/register")} className="w-full">
           <TabsList className="grid w-full grid-cols-2 bg-white/5 border border-white/10 p-1 rounded-lg">
             <TabsTrigger
               value="login"
@@ -124,5 +139,6 @@ const currentTab = view === "register" ? "signup" : "login";
         By continuing, you agree to our Terms of Service and Privacy Policy
       </motion.p>
     </motion.div>
+    </div>
   );
 }
