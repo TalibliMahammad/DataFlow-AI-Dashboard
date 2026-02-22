@@ -1,5 +1,5 @@
-[00:00:03.048] Server  LOG     ✓ Ready in 2.2s
-[00:00:06.992] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+[00:00:01.471] Server  LOG     ✓ Ready in 1043ms
+[00:00:10.774] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
 This will cause a hydration error.%s <button> button 
 
   ...
@@ -36,9 +36,9 @@ This will cause a hydration error.%s <button> button
                           ...
             ...
 
-[00:00:06.992] Browser ERROR   <%s> cannot contain a nested %s.
+[00:00:10.774] Browser ERROR   <%s> cannot contain a nested %s.
 See this log for the ancestor stack trace. button <button>
-[00:00:06.992] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:10.774] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -49,7 +49,7 @@ See this log for the ancestor stack trace. button <button>
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
 https://react.dev/link/hydration-mismatch
-[00:00:14.313] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+[00:00:17.259] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
 This will cause a hydration error.%s <button> button 
 
   ...
@@ -86,9 +86,9 @@ This will cause a hydration error.%s <button> button
                           ...
             ...
 
-[00:00:14.313] Browser ERROR   <%s> cannot contain a nested %s.
+[00:00:17.259] Browser ERROR   <%s> cannot contain a nested %s.
 See this log for the ancestor stack trace. button <button>
-[00:00:14.313] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:17.259] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -99,210 +99,64 @@ See this log for the ancestor stack trace. button <button>
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
 https://react.dev/link/hydration-mismatch
-[00:08:56.233] Server  LOG     ✓ Compiled in 144ms
-[00:09:19.479] Server  LOG     ✓ Compiled in 31ms
-[00:09:21.518] Server  LOG     ✓ Compiled in 36ms
-[00:09:24.982] Server  LOG     ✓ Compiled in 30ms
-[00:09:28.644] Server  LOG     ✓ Compiled in 29ms
-[00:09:33.509] Server  LOG     ✓ Compiled in 37ms
-[00:09:35.108] Server  LOG     ✓ Compiled in 37ms
-[00:10:05.017] Server  LOG     ✓ Compiled in 254ms
-[00:10:05.133] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 | useEffect(() => {
-  32 |   // Səhifəyə gələndə (mount olanda) köhnə alert-ləri sil
+[00:03:22.185] Server  LOG     ✓ Compiled in 594ms
+[00:03:22.289] Browser ERROR   ./app/auth/auth-login.form.tsx:156:20
+Parsing ecmascript source code failed
+  154 |      
+  155 |           </Button>
+> 156 |           </Button>
+      |                    ^
+> 157 |         </form>
+      | ^^^^^^^^^
+  158 |
+  159 |         <div className="relative">
+  160 |           <div className="absolute inset-0 flex items-center">
 
-the name `setAlert` is defined multiple times
+Expected '</', got 'jsx text'
 
-Import trace:
+Import traces:
   Server Component:
     ./app/auth/auth-login.form.tsx
     ./app/auth/login/page.tsx
-[00:10:05.991] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 | useEffect(() => {
-  32 |   // Səhifəyə gələndə (mount olanda) köhnə alert-ləri sil
 
-the name `setAlert` is defined multiple times
+  Client Component Browser:
+    ./app/auth/auth-login.form.tsx [Client Component Browser]
+    ./app/auth/auth.card.tsx [Client Component Browser]
+    ./app/auth/auth.card.tsx [Server Component]
+    ./app/auth/login/page.tsx [Server Component]
 
-Import trace:
+  Client Component SSR:
+    ./app/auth/auth-login.form.tsx [Client Component SSR]
+    ./app/auth/auth.card.tsx [Client Component SSR]
+    ./app/auth/auth.card.tsx [Server Component]
+    ./app/auth/login/page.tsx [Server Component]
+[00:03:22.611] Browser ERROR   ./app/auth/auth-login.form.tsx:156:20
+Parsing ecmascript source code failed
+  154 |      
+  155 |           </Button>
+> 156 |           </Button>
+      |                    ^
+> 157 |         </form>
+      | ^^^^^^^^^
+  158 |
+  159 |         <div className="relative">
+  160 |           <div className="absolute inset-0 flex items-center">
+
+Expected '</', got 'jsx text'
+
+Import traces:
   Server Component:
     ./app/auth/auth-login.form.tsx
     ./app/auth/login/page.tsx
-[00:10:14.718] Server  LOG     ✓ Compiled in 459ms
-[00:10:14.820] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 | useEffect(() => {
-  32 |   // Səhifəyə gələndə (mount olanda) köhnə alert-ləri sil
 
-the name `setAlert` is defined multiple times
+  Client Component Browser:
+    ./app/auth/auth-login.form.tsx [Client Component Browser]
+    ./app/auth/auth.card.tsx [Client Component Browser]
+    ./app/auth/auth.card.tsx [Server Component]
+    ./app/auth/login/page.tsx [Server Component]
 
-Import trace:
-  Server Component:
-    ./app/auth/auth-login.form.tsx
-    ./app/auth/login/page.tsx
-[00:10:14.991] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 | useEffect(() => {
-  32 |   // Səhifəyə gələndə (mount olanda) köhnə alert-ləri sil
-
-the name `setAlert` is defined multiple times
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-login.form.tsx
-    ./app/auth/login/page.tsx
-[00:10:25.722] Server  LOG     ✓ Compiled in 60ms
-[00:10:25.824] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 |
-  32 |
-
-the name `setAlert` is defined multiple times
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-login.form.tsx
-    ./app/auth/login/page.tsx
-[00:10:25.993] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 |
-  32 |
-
-the name `setAlert` is defined multiple times
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-login.form.tsx
-    ./app/auth/login/page.tsx
-[00:10:28.411] Server  LOG     ✓ Compiled in 46ms
-[00:10:28.512] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 |
-  32 |
-
-the name `setAlert` is defined multiple times
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-login.form.tsx
-    ./app/auth/login/page.tsx
-[00:10:28.991] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 |
-  32 |
-
-the name `setAlert` is defined multiple times
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-login.form.tsx
-    ./app/auth/login/page.tsx
-[00:10:42.371] Server  LOG     ✓ Compiled in 103ms
-[00:10:42.474] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 |
-  32 |
-
-the name `setAlert` is defined multiple times
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-login.form.tsx
-    ./app/auth/login/page.tsx
-[00:10:42.992] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 |
-  32 |
-
-the name `setAlert` is defined multiple times
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-login.form.tsx
-    ./app/auth/login/page.tsx
-[00:10:46.468] Server  LOG     ✓ Compiled in 107ms
-[00:10:46.570] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 |
-  32 |
-
-the name `setAlert` is defined multiple times
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-login.form.tsx
-    ./app/auth/login/page.tsx
-[00:10:46.993] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
-Ecmascript file had an error
-  27 |   
-  28 |   const router = useRouter();
-> 29 | const setAlert = useAuthStore((state) => state.setAlert);
-     |       ^^^^^^^^
-  30 |
-  31 |
-  32 |
-
-the name `setAlert` is defined multiple times
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-login.form.tsx
-    ./app/auth/login/page.tsx
-[00:10:53.958] Server  LOG     ✓ Compiled in 12ms
-[00:11:36.184] Browser LOG     Firebase login failed, checking local storage...
+  Client Component SSR:
+    ./app/auth/auth-login.form.tsx [Client Component SSR]
+    ./app/auth/auth.card.tsx [Client Component SSR]
+    ./app/auth/auth.card.tsx [Server Component]
+    ./app/auth/login/page.tsx [Server Component]

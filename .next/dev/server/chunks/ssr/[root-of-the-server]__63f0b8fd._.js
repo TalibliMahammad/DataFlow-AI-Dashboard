@@ -11,7 +11,7 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/app/layout.tsx [app-r
 }),
 "[project]/app/auth/auth-login.form.tsx [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-const e = new Error("Could not parse module '[project]/app/auth/auth-login.form.tsx'\n\nExpected ',', got 'ident'");
+const e = new Error("Could not parse module '[project]/app/auth/auth-login.form.tsx'\n\nExpected '</', got 'jsx text'");
 e.code = 'MODULE_UNPARSABLE';
 throw e;
 }),

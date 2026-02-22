@@ -146,18 +146,13 @@ useEffect(() => {
             disabled={isLoading}
             className="w-full bg-primary hover:bg-primary/80 text-primary-foreground font-medium transition-all duration-200"
           >
-              <Button
-            type="submit"
-            disabled={isLoading}
-            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground  font-medium transition-all duration-200"
-          >
-          
+         
             { isLoading ? <div className="flex items-center gap-2 transition-all duration-300">
                 <span>Logging in</span>
              <Loader />
               </div> : "Log in"}
      
-          </Button>
+   
           </Button>
         </form>
 
