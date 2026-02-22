@@ -1,887 +1,5 @@
-[00:00:01.127] Server  LOG     ✓ Ready in 878ms
-[00:00:02.007] Server  LOG     {}
-[00:00:03.490] Browser LOG     {"blurHeight":0,"blurWidth":0,"height":84,"src":"/_next/static/media/load.d2590ad5.gif","width":150}
-[00:00:03.490] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <motion.div variants={{hidden:{...}, ...}} initial="hidden" animate="visible">
-      <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-        <Tabs value="signup" onValueChange={function onValueChange} className="w-full">
-          <TabsProvider scope={undefined} baseId="radix-_R_1..." value="signup" ...>
-            <Primitive.div dir="ltr" data-orientation="horizontal" className="w-full" ref={null}>
-              <div dir="ltr" data-orientation="horizontal" className="w-full" ref={null}>
-                ...
-                  <div role="tablist" aria-orientation="horizontal" className="h-10 items..." tabIndex={-1} ...>
-                    ...
-                      <RovingFocusGroupCollectionItemSlot.Slot data-radix-collection-item="" ref={function}>
-                        <RovingFocusGroupCollectionItemSlot.SlotClone data-radix-collection-item="" ref={function}>
-                          <Primitive.span tabIndex={-1} data-orientation="horizontal" asChild={true} ref={function} ...>
-                            <Primitive.span.Slot tabIndex={-1} data-orientation="horizontal" ...>
-                              <Primitive.span.SlotClone tabIndex={-1} data-orientation="horizontal" ...>
-                                <Primitive.button type="button" role="tab" aria-selected={false} ...>
-                                  <button
-                                    type="button"
-                                    role="tab"
-                                    aria-selected={false}
-+                                   aria-controls="radix-_R_1ainebn5rlb_-content-login"
--                                   aria-controls="radix-_R_5ainebn5rlb_-content-login"
-                                    data-state="inactive"
-                                    data-disabled={undefined}
-                                    disabled={false}
-+                                   id="radix-_R_1ainebn5rlb_-trigger-login"
--                                   id="radix-_R_5ainebn5rlb_-trigger-login"
-                                    className="inline-flex items-center justify-center whitespace-nowrap px-3 py-1.5 t..."
-                                    onMouseDown={function}
-                                    onKeyDown={function}
-                                    onFocus={function}
-                                    tabIndex={-1}
-                                    data-orientation="horizontal"
-                                    data-radix-collection-item=""
-                                    ref={function}
-                                  >
-+                                   Login
-                    ...
-                      <RovingFocusGroupCollectionItemSlot.Slot data-radix-collection-item="" ref={function}>
-                        <RovingFocusGroupCollectionItemSlot.SlotClone data-radix-collection-item="" ref={function}>
-                          <Primitive.span tabIndex={-1} data-orientation="horizontal" asChild={true} ref={function} ...>
-                            <Primitive.span.Slot tabIndex={-1} data-orientation="horizontal" ...>
-                              <Primitive.span.SlotClone tabIndex={-1} data-orientation="horizontal" ...>
-                                <Primitive.button type="button" role="tab" aria-selected={true} ...>
-                                  <button
-                                    type="button"
-                                    role="tab"
-                                    aria-selected={true}
-+                                   aria-controls="radix-_R_1ainebn5rlb_-content-signup"
--                                   aria-controls="radix-_R_5ainebn5rlb_-content-signup"
-                                    data-state="active"
-                                    data-disabled={undefined}
-                                    disabled={false}
-+                                   id="radix-_R_1ainebn5rlb_-trigger-signup"
--                                   id="radix-_R_5ainebn5rlb_-trigger-signup"
-                                    className="inline-flex items-center justify-center whitespace-nowrap px-3 py-1.5 t..."
-                                    onMouseDown={function}
-                                    onKeyDown={function}
-                                    onFocus={function}
-                                    tabIndex={-1}
-                                    data-orientation="horizontal"
-                                    data-radix-collection-item=""
-                                    ref={function}
-                                  >
-+                                   Create Account
-                <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.3}} ...>
-                  <div className="mt-8" style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                    <_c4 value="login" className="mt-0">
-                      <TabsContent ref={null} className="ring-offse..." value="login">
-                        <Presence present={false}>
-                          <Primitive.div data-state="inactive" data-orientation="horizontal" role="tabpanel" ...>
-                            <div
-                              data-state="inactive"
-                              data-orientation="horizontal"
-                              role="tabpanel"
-+                             aria-labelledby="radix-_R_1ainebn5rlb_-trigger-login"
--                             aria-labelledby="radix-_R_5ainebn5rlb_-trigger-login"
-                              hidden={true}
-+                             id="radix-_R_1ainebn5rlb_-content-login"
--                             id="radix-_R_5ainebn5rlb_-content-login"
-                              tabIndex={0}
-                              className="ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-..."
-                              style={{animationDuration:undefined}}
-                              ref={function}
-                            >
-                    <_c4 value="signup" className="mt-0">
-                      <TabsContent ref={null} className="ring-offse..." value="signup">
-                        <Presence present={true}>
-                          <Primitive.div data-state="active" data-orientation="horizontal" role="tabpanel" ...>
-                            <div
-                              data-state="active"
-                              data-orientation="horizontal"
-                              role="tabpanel"
-+                             aria-labelledby="radix-_R_1ainebn5rlb_-trigger-signup"
--                             aria-labelledby="radix-_R_5ainebn5rlb_-trigger-signup"
-                              hidden={false}
-+                             id="radix-_R_1ainebn5rlb_-content-signup"
--                             id="radix-_R_5ainebn5rlb_-content-signup"
-                              tabIndex={0}
-                              className="ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-..."
-                              style={{animationDuration:"0s"}}
-                              ref={function}
-                            >
-
-[00:00:15.309] Browser LOG     {"blurHeight":0,"blurWidth":0,"height":84,"src":"/_next/static/media/load.d2590ad5.gif","width":150}
-[00:00:20.033] Browser LOG     {"blurHeight":0,"blurWidth":0,"height":84,"src":"/_next/static/media/load.d2590ad5.gif","width":150}
-[00:00:28.686] Browser LOG     {"blurHeight":0,"blurWidth":0,"height":84,"src":"/_next/static/media/load.d2590ad5.gif","width":150}
-[00:00:56.759] Server  LOG     ✓ Compiled in 582ms
-[00:00:56.771] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:56.772] Browser LOG     {"blurHeight":0,"blurWidth":0,"height":84,"src":"/_next/static/media/load.d2590ad5.gif","width":150}
-[00:00:56.772] Browser ERROR   uncaughtError: ReferenceError: Loader is not defined
-[00:00:57.172] Server  LOG     {}
-[00:00:57.261] Server  ERROR   ⨯ ReferenceError: Loader is not defined
-[00:00:57.293] Browser LOG     {"blurHeight":0,"blurWidth":0,"height":84,"src":"/_next/static/media/load.d2590ad5.gif","width":150}
-[00:00:57.293] Browser ERROR   uncaughtError: ReferenceError: Loader is not defined
-[00:00:57.298] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:57.298] Browser LOG     {"blurHeight":0,"blurWidth":0,"height":84,"src":"/_next/static/media/load.d2590ad5.gif","width":150}
-[00:00:57.298] Browser ERROR   uncaughtError: ReferenceError: Loader is not defined
-[00:00:57.413] Server  ERROR   ⨯ ReferenceError: Loader is not defined
-[00:00:58.072] Browser LOG     {"blurHeight":0,"blurWidth":0,"height":84,"src":"/_next/static/media/load.d2590ad5.gif","width":150}
-[00:00:58.072] Browser ERROR   uncaughtError: ReferenceError: Loader is not defined
-[00:00:59.493] Browser LOG     {"blurHeight":0,"blurWidth":0,"height":84,"src":"/_next/static/media/load.d2590ad5.gif","width":150}
-[00:00:59.493] Browser ERROR   uncaughtError: ReferenceError: Loader is not defined
-[00:01:01.044] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:01.044] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:01.044] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:01.044] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:01.046] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:01.048] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:01.048] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:01.049] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:01.049] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/auth/auth-signup-form.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:01:01.050] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:01.054] Server  LOG     ✓ Compiled in 83ms
-[00:01:01.061] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:01.935] Server  ERROR   ⨯ ReferenceError: Loading is not defined
-[00:01:02.283] Server  ERROR   ⨯ ReferenceError: Loading is not defined
-[00:01:02.852] Server  ERROR   ⨯ ReferenceError: Loading is not defined
-[00:01:03.195] Browser ERROR   uncaughtError: ReferenceError: Loading is not defined
-[00:01:03.495] Browser ERROR   uncaughtError: ReferenceError: Loading is not defined
-[00:01:03.735] Browser ERROR   uncaughtError: ReferenceError: Loading is not defined
-[00:01:06.133] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:06.133] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/auth/auth-signup-form.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:01:06.134] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:06.135] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:06.136] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/auth/auth-signup-form.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:01:06.136] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:06.137] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:06.137] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/auth/auth-signup-form.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:01:06.138] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:06.156] Server  LOG     ✓ Compiled in 37ms
-[00:01:06.409] Server  ERROR   ⨯ ReferenceError: Loader is not defined
-[00:01:06.480] Server  ERROR   ⨯ ReferenceError: Loader is not defined
-[00:01:06.600] Server  ERROR   ⨯ ReferenceError: Loader is not defined
-[00:01:07.052] Browser ERROR   uncaughtError: ReferenceError: Loader is not defined
-[00:01:07.127] Browser ERROR   uncaughtError: ReferenceError: Loader is not defined
-[00:01:08.492] Browser ERROR   uncaughtError: ReferenceError: Loader is not defined
-[00:01:17.935] Server  LOG     ✓ Compiled in 280ms
-[00:01:17.950] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:17.954] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:17.971] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:19.492] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <motion.div variants={{hidden:{...}, ...}} initial="hidden" animate="visible">
-      <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-        <Tabs value="signup" onValueChange={function onValueChange} className="w-full">
-          <TabsProvider scope={undefined} baseId="radix-_R_1..." value="signup" ...>
-            <Primitive.div dir="ltr" data-orientation="horizontal" className="w-full" ref={null}>
-              <div dir="ltr" data-orientation="horizontal" className="w-full" ref={null}>
-                ...
-                  <div role="tablist" aria-orientation="horizontal" className="h-10 items..." tabIndex={-1} ...>
-                    ...
-                      <RovingFocusGroupCollectionItemSlot.Slot data-radix-collection-item="" ref={function}>
-                        <RovingFocusGroupCollectionItemSlot.SlotClone data-radix-collection-item="" ref={function}>
-                          <Primitive.span tabIndex={-1} data-orientation="horizontal" asChild={true} ref={function} ...>
-                            <Primitive.span.Slot tabIndex={-1} data-orientation="horizontal" ...>
-                              <Primitive.span.SlotClone tabIndex={-1} data-orientation="horizontal" ...>
-                                <Primitive.button type="button" role="tab" aria-selected={false} ...>
-                                  <button
-                                    type="button"
-                                    role="tab"
-                                    aria-selected={false}
-+                                   aria-controls="radix-_R_1ainebn5rlb_-content-login"
--                                   aria-controls="radix-_R_5ainebn5rlb_-content-login"
-                                    data-state="inactive"
-                                    data-disabled={undefined}
-                                    disabled={false}
-+                                   id="radix-_R_1ainebn5rlb_-trigger-login"
--                                   id="radix-_R_5ainebn5rlb_-trigger-login"
-                                    className="inline-flex items-center justify-center whitespace-nowrap px-3 py-1.5 t..."
-                                    onMouseDown={function}
-                                    onKeyDown={function}
-                                    onFocus={function}
-                                    tabIndex={-1}
-                                    data-orientation="horizontal"
-                                    data-radix-collection-item=""
-                                    ref={function}
-                                  >
-+                                   Login
-                    ...
-                      <RovingFocusGroupCollectionItemSlot.Slot data-radix-collection-item="" ref={function}>
-                        <RovingFocusGroupCollectionItemSlot.SlotClone data-radix-collection-item="" ref={function}>
-                          <Primitive.span tabIndex={-1} data-orientation="horizontal" asChild={true} ref={function} ...>
-                            <Primitive.span.Slot tabIndex={-1} data-orientation="horizontal" ...>
-                              <Primitive.span.SlotClone tabIndex={-1} data-orientation="horizontal" ...>
-                                <Primitive.button type="button" role="tab" aria-selected={true} ...>
-                                  <button
-                                    type="button"
-                                    role="tab"
-                                    aria-selected={true}
-+                                   aria-controls="radix-_R_1ainebn5rlb_-content-signup"
--                                   aria-controls="radix-_R_5ainebn5rlb_-content-signup"
-                                    data-state="active"
-                                    data-disabled={undefined}
-                                    disabled={false}
-+                                   id="radix-_R_1ainebn5rlb_-trigger-signup"
--                                   id="radix-_R_5ainebn5rlb_-trigger-signup"
-                                    className="inline-flex items-center justify-center whitespace-nowrap px-3 py-1.5 t..."
-                                    onMouseDown={function}
-                                    onKeyDown={function}
-                                    onFocus={function}
-                                    tabIndex={-1}
-                                    data-orientation="horizontal"
-                                    data-radix-collection-item=""
-                                    ref={function}
-                                  >
-+                                   Create Account
-                <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.3}} ...>
-                  <div className="mt-8" style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                    <_c4 value="login" className="mt-0">
-                      <TabsContent ref={null} className="ring-offse..." value="login">
-                        <Presence present={false}>
-                          <Primitive.div data-state="inactive" data-orientation="horizontal" role="tabpanel" ...>
-                            <div
-                              data-state="inactive"
-                              data-orientation="horizontal"
-                              role="tabpanel"
-+                             aria-labelledby="radix-_R_1ainebn5rlb_-trigger-login"
--                             aria-labelledby="radix-_R_5ainebn5rlb_-trigger-login"
-                              hidden={true}
-+                             id="radix-_R_1ainebn5rlb_-content-login"
--                             id="radix-_R_5ainebn5rlb_-content-login"
-                              tabIndex={0}
-                              className="ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-..."
-                              style={{animationDuration:undefined}}
-                              ref={function}
-                            >
-                    <_c4 value="signup" className="mt-0">
-                      <TabsContent ref={null} className="ring-offse..." value="signup">
-                        <Presence present={true}>
-                          <Primitive.div data-state="active" data-orientation="horizontal" role="tabpanel" ...>
-                            <div
-                              data-state="active"
-                              data-orientation="horizontal"
-                              role="tabpanel"
-+                             aria-labelledby="radix-_R_1ainebn5rlb_-trigger-signup"
--                             aria-labelledby="radix-_R_5ainebn5rlb_-trigger-signup"
-                              hidden={false}
-+                             id="radix-_R_1ainebn5rlb_-content-signup"
--                             id="radix-_R_5ainebn5rlb_-content-signup"
-                              tabIndex={0}
-                              className="ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-..."
-                              style={{animationDuration:"0s"}}
-                              ref={function}
-                            >
-
-[00:01:37.261] Server  LOG     ✓ Compiled in 541ms
-[00:01:50.893] Server  LOG     ✓ Compiled in 36ms
-[00:01:51.036] Browser ERROR   ./components/ui/loader.tsx:7:28
-Parsing ecmascript source code failed
-   5 |   return (
-   6 |     <div className="flex justify-center items-center h-screen">
->  7 |      <PulseLoader size={} />
-     |                            ^
-   8 |     </div>
-   9 |   );
-  10 | }
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./components/ui/loader.tsx [Client Component Browser]
-    ./app/auth/auth-signup-form.tsx [Client Component Browser]
-    ./app/auth/auth-signup-form.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./components/ui/loader.tsx [Client Component SSR]
-    ./app/auth/auth-signup-form.tsx [Client Component SSR]
-    ./app/auth/auth-signup-form.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-[00:01:51.040] Browser ERROR   ./components/ui/loader.tsx:7:28
-Parsing ecmascript source code failed
-   5 |   return (
-   6 |     <div className="flex justify-center items-center h-screen">
->  7 |      <PulseLoader size={} />
-     |                            ^
-   8 |     </div>
-   9 |   );
-  10 | }
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./components/ui/loader.tsx [Client Component Browser]
-    ./app/auth/auth-signup-form.tsx [Client Component Browser]
-    ./app/auth/auth-signup-form.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./components/ui/loader.tsx [Client Component SSR]
-    ./app/auth/auth-signup-form.tsx [Client Component SSR]
-    ./app/auth/auth-signup-form.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-[00:01:51.490] Browser ERROR   ./components/ui/loader.tsx:7:28
-Parsing ecmascript source code failed
-   5 |   return (
-   6 |     <div className="flex justify-center items-center h-screen">
->  7 |      <PulseLoader size={} />
-     |                            ^
-   8 |     </div>
-   9 |   );
-  10 | }
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./components/ui/loader.tsx [Client Component Browser]
-    ./app/auth/auth-signup-form.tsx [Client Component Browser]
-    ./app/auth/auth-signup-form.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./components/ui/loader.tsx [Client Component SSR]
-    ./app/auth/auth-signup-form.tsx [Client Component SSR]
-    ./app/auth/auth-signup-form.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-[00:01:52.088] Server  LOG     ✓ Compiled in 66ms
-[00:01:56.647] Server  LOG     ✓ Compiled in 26ms
-[00:02:02.393] Server  LOG     ✓ Compiled in 28ms
-[00:02:08.761] Server  LOG     ✓ Compiled in 27ms
-[00:02:17.271] Server  LOG     ✓ Compiled in 22ms
-[00:02:43.918] Server  LOG     ✓ Compiled in 56ms
-[00:02:50.360] Server  LOG     ✓ Compiled in 206ms
-[00:02:50.463] Browser ERROR   ./app/auth/auth-signup-form.tsx:285:23
-Parsing ecmascript source code failed
-  283 |           >
-  284 |           
-> 285 |             { is <div className="flex items-center gap-2">
-      |                       ^^^^^^^^^
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-  288 |               </div>}
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:02:50.463] Browser ERROR   ./app/auth/auth-signup-form.tsx:285:23
-Parsing ecmascript source code failed
-  283 |           >
-  284 |           
-> 285 |             { is <div className="flex items-center gap-2">
-      |                       ^^^^^^^^^
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-  288 |               </div>}
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:02:50.490] Browser ERROR   ./app/auth/auth-signup-form.tsx:285:23
-Parsing ecmascript source code failed
-  283 |           >
-  284 |           
-> 285 |             { is <div className="flex items-center gap-2">
-      |                       ^^^^^^^^^
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-  288 |               </div>}
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:02:52.429] Server  LOG     ✓ Compiled in 52ms
-[00:02:52.530] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:21
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div>}
-      |                     ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:02:52.530] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:21
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div>}
-      |                     ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:02:53.490] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:21
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div>}
-      |                     ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:02:55.658] Server  LOG     ✓ Compiled in 29ms
-[00:02:55.760] Browser ERROR   ./app/auth/auth-signup-form.tsx:285:31
-Parsing ecmascript source code failed
-  283 |           >
-  284 |           
-> 285 |             { isLoading  <div className="flex items-center gap-2">
-      |                               ^^^^^^^^^
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-  288 |               </div>}
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:02:55.760] Browser ERROR   ./app/auth/auth-signup-form.tsx:285:31
-Parsing ecmascript source code failed
-  283 |           >
-  284 |           
-> 285 |             { isLoading  <div className="flex items-center gap-2">
-      |                               ^^^^^^^^^
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-  288 |               </div>}
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:02:56.490] Browser ERROR   ./app/auth/auth-signup-form.tsx:285:31
-Parsing ecmascript source code failed
-  283 |           >
-  284 |           
-> 285 |             { isLoading  <div className="flex items-center gap-2">
-      |                               ^^^^^^^^^
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-  288 |               </div>}
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:02:59.405] Server  LOG     ✓ Compiled in 39ms
-[00:02:59.506] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:21
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div>}
-      |                     ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:02:59.507] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:21
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div>}
-      |                     ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:00.481] Server  LOG     ✓ Compiled in 53ms
-[00:03:00.582] Browser ERROR   ./app/auth/auth-signup-form.tsx:285:31
-Parsing ecmascript source code failed
-  283 |           >
-  284 |           
-> 285 |             { isLoading  <div className="flex items-center gap-2">
-      |                               ^^^^^^^^^
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-  288 |               </div>}
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:00.582] Browser ERROR   ./app/auth/auth-signup-form.tsx:285:31
-Parsing ecmascript source code failed
-  283 |           >
-  284 |           
-> 285 |             { isLoading  <div className="flex items-center gap-2">
-      |                               ^^^^^^^^^
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-  288 |               </div>}
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:01.490] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:21
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div>}
-      |                     ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:01.490] Browser ERROR   ./app/auth/auth-signup-form.tsx:285:31
-Parsing ecmascript source code failed
-  283 |           >
-  284 |           
-> 285 |             { isLoading  <div className="flex items-center gap-2">
-      |                               ^^^^^^^^^
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-  288 |               </div>}
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:05.307] Server  LOG     ✓ Compiled in 69ms
-[00:03:05.420] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:21
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div>}
-      |                     ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:05.421] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:21
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div>}
-      |                     ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:05.490] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:21
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div>}
-      |                     ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:18.253] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:24
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : }
-      |                        ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:18.253] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:24
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : }
-      |                        ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:18.490] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:24
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : }
-      |                        ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:23.700] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:24
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : }
-      |                        ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:23.701] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:24
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : }
-      |                        ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:24.490] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:24
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : }
-      |                        ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:27.187] Server  LOG     ✓ Compiled in 28ms
-[00:03:27.289] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:29
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : Sign U}
-      |                             ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:27.289] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:29
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : Sign U}
-      |                             ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:27.490] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:29
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : Sign U}
-      |                             ^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:28.431] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:29
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : Sign Up}
-      |                             ^^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:28.432] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:29
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : Sign Up}
-      |                             ^^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:03:28.490] Browser ERROR   ./app/auth/auth-signup-form.tsx:288:29
-Parsing ecmascript source code failed
-  286 |                 <span>Creating Account</span>
-  287 |              <Loader />
-> 288 |               </div> : Sign Up}
-      |                             ^^
-  289 |      
-  290 |           </Button>
-  291 |         </form>
-
-Expected '</', got 'ident'
-
-Import trace:
-  Server Component:
-    ./app/auth/auth-signup-form.tsx
-    ./app/auth/register/page.tsx
-[00:04:08.125] Server  LOG     ✓ Compiled in 19ms
-[00:04:09.595] Server  LOG     ✓ Compiled in 29ms
-[00:04:12.568] Server  LOG     ✓ Compiled in 36ms
-[00:04:14.273] Server  LOG     ✓ Compiled in 54ms
-[00:04:15.533] Server  LOG     ✓ Compiled in 45ms
-[00:04:23.749] Server  LOG     ✓ Compiled in 15ms
-[00:04:34.143] Server  LOG     ✓ Compiled in 56ms
-[00:04:46.228] Server  LOG     ✓ Compiled in 31ms
-[00:04:50.355] Server  LOG     ✓ Compiled in 19ms
-[00:04:51.909] Server  LOG     ✓ Compiled in 19ms
-[00:04:55.311] Server  LOG     ✓ Compiled in 24ms
-[00:04:58.060] Server  LOG     ✓ Compiled in 14ms
-[00:05:06.053] Server  LOG     ✓ Compiled in 21ms
-[00:05:51.787] Server  LOG     ✓ Compiled in 57ms
-[00:05:53.070] Server  LOG     ✓ Compiled in 52ms
-[00:05:55.850] Server  LOG     ✓ Compiled in 16ms
-[00:06:04.824] Server  LOG     ✓ Compiled in 63ms
-[00:06:15.675] Server  LOG     ✓ Compiled in 55ms
-[00:06:18.809] Server  LOG     ✓ Compiled in 27ms
-[00:22:53.070] Server  LOG     ✓ Compiled in 11ms
-[00:25:10.866] Server  LOG     ✓ Compiled in 49ms
-[00:25:20.935] Server  LOG     ✓ Compiled in 10ms
-[00:26:09.895] Server  LOG     ✓ Compiled in 18ms
-[00:26:14.075] Server  LOG     ✓ Compiled in 59ms
-[00:26:18.052] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+[00:00:03.048] Server  LOG     ✓ Ready in 2.2s
+[00:00:06.992] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
 This will cause a hydration error.%s <button> button 
 
   ...
@@ -918,567 +36,9 @@ This will cause a hydration error.%s <button> button
                           ...
             ...
 
-[00:26:18.052] Browser ERROR   <%s> cannot contain a nested %s.
+[00:00:06.992] Browser ERROR   <%s> cannot contain a nested %s.
 See this log for the ancestor stack trace. button <button>
-[00:26:27.462] Server  LOG     ✓ Compiled in 9ms
-[00:27:06.528] Server  LOG     ✓ Compiled in 12ms
-[00:27:15.691] Server  LOG     ✓ Compiled in 9ms
-[00:27:16.700] Server  LOG     ✓ Compiled in 9ms
-[00:27:50.403] Browser LOG     Firebase login failed, checking local storage...
-[00:28:12.896] Server  LOG     ✓ Compiled in 43ms
-[00:28:17.280] Server  LOG     ✓ Compiled in 7ms
-[00:28:20.600] Server  LOG     ✓ Compiled in 12ms
-[00:28:21.733] Server  LOG     ✓ Compiled in 8ms
-[00:28:26.006] Server  LOG     ✓ Compiled in 8ms
-[00:28:27.744] Server  LOG     ✓ Compiled in 8ms
-[00:28:32.228] Server  LOG     ✓ Compiled in 8ms
-[00:29:51.238] Server  LOG     ✓ Compiled in 43ms
-[00:30:04.965] Browser LOG     Firebase login failed, checking local storage...
-[00:56:22.487] Server  LOG     ✓ Compiled in 10ms
-[00:57:38.316] Server  LOG     ✓ Compiled in 55ms
-[00:58:58.363] Browser LOG     Firebase login failed, checking local storage...
-[01:00:30.062] Browser LOG     Firebase login failed, checking local storage...
-[01:00:46.910] Server  LOG     ✓ Compiled in 25ms
-[01:00:57.157] Server  LOG     ✓ Compiled in 232ms
-[01:01:19.519] Server  LOG     ✓ Compiled in 12ms
-[01:02:34.856] Server  LOG     ✓ Compiled in 105ms
-[01:02:36.077] Server  LOG     ✓ Compiled in 38ms
-[01:02:36.178] Browser ERROR   ./app/auth/auth-login.form.tsx:85:12
-Parsing ecmascript source code failed
-  83 |
-  84 |       { <CustomAlert />
-> 85 |       <div className="space-y-6">
-     |            ^^^^^^^^^
-  86 |         <form onSubmit={handleSubmit} className="space-y-2 ">
-  87 |           <div className="space-y-2  flex-col flex gap-1">
-  88 |             <Label
-
-Expected '</', got 'ident'
-
-Import traces:
-  Client Component Browser:
-    ./app/auth/auth-login.form.tsx [Client Component Browser]
-    ./app/auth/auth.card.tsx [Client Component Browser]
-    ./app/auth/auth.card.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/auth/auth-login.form.tsx [Client Component SSR]
-    ./app/auth/auth.card.tsx [Client Component SSR]
-    ./app/auth/auth.card.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-[01:02:36.489] Browser ERROR   ./app/auth/auth-login.form.tsx:85:12
-Parsing ecmascript source code failed
-  83 |
-  84 |       { <CustomAlert />
-> 85 |       <div className="space-y-6">
-     |            ^^^^^^^^^
-  86 |         <form onSubmit={handleSubmit} className="space-y-2 ">
-  87 |           <div className="space-y-2  flex-col flex gap-1">
-  88 |             <Label
-
-Expected '</', got 'ident'
-
-Import traces:
-  Client Component Browser:
-    ./app/auth/auth-login.form.tsx [Client Component Browser]
-    ./app/auth/auth.card.tsx [Client Component Browser]
-    ./app/auth/auth.card.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/auth/auth-login.form.tsx [Client Component SSR]
-    ./app/auth/auth.card.tsx [Client Component SSR]
-    ./app/auth/auth.card.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-[01:02:37.346] Server  LOG     ✓ Compiled in 16ms
-[01:02:58.223] Server  LOG     ✓ Compiled in 9ms
-[01:03:00.681] Server  LOG     ✓ Compiled in 6ms
-[01:03:24.113] Browser LOG     Firebase login failed, checking local storage...
-[01:04:12.458] Server  LOG     ✓ Compiled in 4ms
-[01:04:18.657] Server  LOG     ✓ Compiled in 76ms
-[01:04:21.122] Server  LOG     ✓ Compiled in 22ms
-[01:04:21.223] Browser ERROR   ./app/dashboard/page.tsx:17:11
-Parsing ecmascript source code failed
-  15 |
-  16 |
-> 17 | useEffect(())
-     |           ^^
-  18 |
-  19 |
-  20 |   return (
-
-Parenthesized expression cannot be empty
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:04:21.489] Browser ERROR   ./app/dashboard/page.tsx:17:11
-Parsing ecmascript source code failed
-  15 |
-  16 |
-> 17 | useEffect(())
-     |           ^^
-  18 |
-  19 |
-  20 |   return (
-
-Parenthesized expression cannot be empty
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:04:25.298] Server  LOG     ✓ Compiled in 7ms
-[01:04:25.398] Browser ERROR   ./app/dashboard/page.tsx:17:15
-Parsing ecmascript source code failed
-  15 |
-  16 |
-> 17 | useEffect(()=>)
-     |               ^
-  18 |
-  19 |
-  20 |   return (
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:04:25.490] Browser ERROR   ./app/dashboard/page.tsx:17:15
-Parsing ecmascript source code failed
-  15 |
-  16 |
-> 17 | useEffect(()=>)
-     |               ^
-  18 |
-  19 |
-  20 |   return (
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:04:30.571] Server  LOG     ✓ Compiled in 7ms
-[01:04:35.508] Server  LOG     ✓ Compiled in 19ms
-[01:04:35.608] Browser ERROR   ./app/dashboard/page.tsx:15:9
-Parsing ecmascript source code failed
-  13 | export default function Dashboard() {
-  14 |   const [isOpen, setIsOpen] = useState(false);
-> 15 |   const set
-     |         ^^^
-  16 |
-  17 |
-  18 | useEffect(()=>{
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:04:36.489] Browser ERROR   ./app/dashboard/page.tsx:15:9
-Parsing ecmascript source code failed
-  13 | export default function Dashboard() {
-  14 |   const [isOpen, setIsOpen] = useState(false);
-> 15 |   const set
-     |         ^^^
-  16 |
-  17 |
-  18 | useEffect(()=>{
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:04:41.816] Browser ERROR   ./app/dashboard/page.tsx:15:9
-Parsing ecmascript source code failed
-  13 | export default function Dashboard() {
-  14 |   const [isOpen, setIsOpen] = useState(false);
-> 15 |   const setAlert 
-     |         ^^^^^^^^
-  16 |
-  17 |
-  18 | useEffect(()=>{
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:04:42.491] Browser ERROR   ./app/dashboard/page.tsx:15:9
-Parsing ecmascript source code failed
-  13 | export default function Dashboard() {
-  14 |   const [isOpen, setIsOpen] = useState(false);
-> 15 |   const setAlert 
-     |         ^^^^^^^^
-  16 |
-  17 |
-  18 | useEffect(()=>{
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:04:47.519] Browser ERROR   uncaughtError: ReferenceError: use is not defined
-[01:04:51.182] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:04:51.234] Server  LOG     ✓ Compiled in 39ms
-[01:04:54.080] Server  LOG     ✓ Compiled in 5ms
-[01:04:54.162] Browser ERROR   uncaughtError: ReferenceError: state is not defined
-[01:04:56.219] Server  LOG     ✓ Compiled in 16ms
-[01:04:56.320] Browser ERROR   ./app/dashboard/page.tsx:16:42
-Parsing ecmascript source code failed
-  14 | export default function Dashboard() {
-  15 |   const [isOpen, setIsOpen] = useState(false);
-> 16 |   const setAlert = useAuthStore((state)=>)
-     |                                          ^
-  17 |
-  18 |
-  19 | useEffect(()=>{
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:04:56.489] Browser ERROR   ./app/dashboard/page.tsx:16:42
-Parsing ecmascript source code failed
-  14 | export default function Dashboard() {
-  15 |   const [isOpen, setIsOpen] = useState(false);
-> 16 |   const setAlert = useAuthStore((state)=>)
-     |                                          ^
-  17 |
-  18 |
-  19 | useEffect(()=>{
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:04:59.004] Server  LOG     ✓ Compiled in 5ms
-[01:04:59.105] Browser ERROR   ./app/dashboard/page.tsx:16:48
-Parsing ecmascript source code failed
-  14 | export default function Dashboard() {
-  15 |   const [isOpen, setIsOpen] = useState(false);
-> 16 |   const setAlert = useAuthStore((state)=>state.)
-     |                                                ^
-  17 |
-  18 |
-  19 | useEffect(()=>{
-
-Expected ident
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:04:59.489] Browser ERROR   ./app/dashboard/page.tsx:16:48
-Parsing ecmascript source code failed
-  14 | export default function Dashboard() {
-  15 |   const [isOpen, setIsOpen] = useState(false);
-> 16 |   const setAlert = useAuthStore((state)=>state.)
-     |                                                ^
-  17 |
-  18 |
-  19 | useEffect(()=>{
-
-Expected ident
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:05:08.853] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:05:08.858] Server  LOG     ✓ Compiled in 47ms
-[01:05:25.053] Server  LOG     ✓ Compiled in 7ms
-[01:05:30.549] Server  LOG     ✓ Compiled in 26ms
-[01:05:38.867] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <Primitive.div dir="ltr" data-orientation="horizontal" className="w-full" ref={null}>
-      <div dir="ltr" data-orientation="horizontal" className="w-full" ref={null}>
-        <_c>
-        <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.3}} ...>
-          <div className="mt-8" style={{opacity:0}} ref={function useMotionRef.useCallback}>
-            <_c4 value="login" className="mt-0">
-              <TabsContent ref={null} className="ring-offse..." value="login">
-                <Presence present={true}>
-                  <Primitive.div data-state="active" data-orientation="horizontal" role="tabpanel" ...>
-                    <div data-state="active" data-orientation="horizontal" role="tabpanel" ...>
-                      <AuthLoginForm>
-                        <CustomAlert>
-                        <div className="space-y-6">
-                          <form onSubmit={function handleSubmit} className={"space-y-2 "}>
-                            <div>
-                            <div>
-                            <_c type="submit" disabled={false} className="w-full bg-...">
->                             <button
->                               className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-m..."}
->                               ref={null}
->                               type="submit"
->                               disabled={false}
->                             >
-                                <_c type="submit" disabled={false} className="w-full bg-...">
->                                 <button
->                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
->                                   ref={null}
->                                   type="submit"
->                                   disabled={false}
->                                 >
-                          ...
-            ...
-
-[01:05:38.867] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[01:06:06.341] Browser LOG     Firebase login failed, checking local storage...
-[01:06:44.148] Server  LOG     ✓ Compiled in 4ms
-[01:06:47.154] Server  LOG     ✓ Compiled in 22ms
-[01:06:47.257] Browser ERROR   ./app/dashboard/page.tsx:22:33
-Parsing ecmascript source code failed
-  20 |    setAlert({ message: "Welcome back", type: "success" });
-  21 |
-> 22 |    const timer = setTimeout(()=>)
-     |                                 ^
-  23 | })
-  24 |
-  25 |
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:06:47.489] Browser ERROR   ./app/dashboard/page.tsx:22:33
-Parsing ecmascript source code failed
-  20 |    setAlert({ message: "Welcome back", type: "success" });
-  21 |
-> 22 |    const timer = setTimeout(()=>)
-     |                                 ^
-  23 | })
-  24 |
-  25 |
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:06:51.608] Server  LOG     ✓ Compiled in 70ms
-[01:06:54.509] Server  LOG     ✓ Compiled in 6ms
-[01:06:57.438] Server  LOG     ✓ Compiled in 9ms
-[01:07:04.358] Server  LOG     ✓ Compiled in 5ms
-[01:07:12.662] Server  LOG     ✓ Compiled in 6ms
-[01:07:14.756] Server  LOG     ✓ Compiled in 6ms
-[01:07:16.255] Server  LOG     ✓ Compiled in 15ms
-[01:07:16.356] Browser ERROR   ./app/dashboard/page.tsx:24:11
-Parsing ecmascript source code failed
-  22 |    const timer = setTimeout(()=>{
-  23 |     setAlert(null)
-> 24 |     return()
-     |           ^^
-  25 |    },3000)
-  26 | })
-  27 |
-
-Parenthesized expression cannot be empty
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:07:16.489] Browser ERROR   ./app/dashboard/page.tsx:24:11
-Parsing ecmascript source code failed
-  22 |    const timer = setTimeout(()=>{
-  23 |     setAlert(null)
-> 24 |     return()
-     |           ^^
-  25 |    },3000)
-  26 | })
-  27 |
-
-Parenthesized expression cannot be empty
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:07:18.314] Server  LOG     ✓ Compiled in 7ms
-[01:07:18.415] Browser ERROR   ./app/dashboard/page.tsx:25:4
-Parsing ecmascript source code failed
-  23 |     setAlert(null)
-  24 |     return()=>
-> 25 |    },3000)
-     |    ^
-  26 | })
-  27 |
-  28 |
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:07:18.489] Browser ERROR   ./app/dashboard/page.tsx:25:4
-Parsing ecmascript source code failed
-  23 |     setAlert(null)
-  24 |     return()=>
-> 25 |    },3000)
-     |    ^
-  26 | })
-  27 |
-  28 |
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[01:07:22.368] Server  LOG     ✓ Compiled in 17ms
-[01:07:25.229] Server  LOG     ✓ Compiled in 4ms
-[01:07:28.307] Server  LOG     ✓ Compiled in 28ms
-[01:07:33.118] Server  LOG     ✓ Compiled in 14ms
-[01:07:38.140] Server  LOG     ✓ Compiled in 6ms
-[01:07:41.458] Server  LOG     ✓ Compiled in 26ms
-[01:07:43.421] Server  LOG     ✓ Compiled in 4ms
-[01:21:55.254] Server  LOG     ✓ Compiled in 100ms
-[01:21:55.543] Server  ERROR   ⨯ ReferenceError: nul is not defined
-[01:21:55.828] Server  ERROR   ⨯ ReferenceError: nul is not defined
-[01:21:56.397] Browser ERROR   uncaughtError: ReferenceError: nul is not defined
-[01:21:56.491] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:21:56.491] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./store/useAuthStore.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:21:56.492] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:21:56.546] Server  LOG     ✓ Compiled in 7ms
-[01:21:56.607] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:21:56.607] Browser ERROR   uncaughtError: ReferenceError: nul is not defined
-[01:21:56.983] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <Primitive.div dir="ltr" data-orientation="horizontal" className="w-full" ref={null}>
-      <div dir="ltr" data-orientation="horizontal" className="w-full" ref={null}>
-        <_c>
-        <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.3}} ...>
-          <div className="mt-8" style={{opacity:0}} ref={function useMotionRef.useCallback}>
-            <_c4 value="login" className="mt-0">
-              <TabsContent ref={null} className="ring-offse..." value="login">
-                <Presence present={true}>
-                  <Primitive.div data-state="active" data-orientation="horizontal" role="tabpanel" ...>
-                    <div data-state="active" data-orientation="horizontal" role="tabpanel" ...>
-                      <AuthLoginForm>
-                        <CustomAlert>
-                        <div className="space-y-6">
-                          <form onSubmit={function handleSubmit} className={"space-y-2 "}>
-                            <div>
-                            <div>
-                            <_c type="submit" disabled={false} className="w-full bg-...">
->                             <button
->                               className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-m..."}
->                               ref={null}
->                               type="submit"
->                               disabled={false}
->                             >
-                                <_c type="submit" disabled={false} className="w-full bg-...">
->                                 <button
->                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
->                                   ref={null}
->                                   type="submit"
->                                   disabled={false}
->                                 >
-                          ...
-            ...
-
-[01:21:56.983] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[01:21:56.983] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:06.992] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -1489,64 +49,260 @@ See this log for the ancestor stack trace. button <button>
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
 https://react.dev/link/hydration-mismatch
-[01:22:01.175] Server  LOG     ✓ Compiled in 7ms
-[01:22:05.203] Server  LOG     ✓ Compiled in 25ms
-[01:22:12.870] Server  LOG     ✓ Compiled in 8ms
-[01:22:22.012] Server  LOG     ✓ Compiled in 9ms
-[01:23:01.152] Server  LOG     ✓ Compiled in 6ms
-[01:23:05.552] Server  LOG     ✓ Compiled in 8ms
-[01:24:46.600] Server  LOG     ✓ Compiled in 35ms
-[01:24:46.701] Browser ERROR   ./store/useAuthStore.ts:171:5
-Parsing ecmascript source code failed
-  169 |   
-  170 |
-> 171 |     {
-      |     ^
-  172 |       name: "auth-storage",
-  173 |     },
-  174 |   ),
+[00:00:14.313] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
 
-Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+  ...
+    <Primitive.div dir="ltr" data-orientation="horizontal" className="w-full" ref={null}>
+      <div dir="ltr" data-orientation="horizontal" className="w-full" ref={null}>
+        <_c>
+        <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.3}} ...>
+          <div className="mt-8" style={{opacity:0}} ref={function useMotionRef.useCallback}>
+            <_c4 value="login" className="mt-0">
+              <TabsContent ref={null} className="ring-offse..." value="login">
+                <Presence present={true}>
+                  <Primitive.div data-state="active" data-orientation="horizontal" role="tabpanel" ...>
+                    <div data-state="active" data-orientation="horizontal" role="tabpanel" ...>
+                      <AuthLoginForm>
+                        <CustomAlert>
+                        <div className="space-y-6">
+                          <form onSubmit={function handleSubmit} className={"space-y-2 "}>
+                            <div>
+                            <div>
+                            <_c type="submit" disabled={false} className="w-full bg-...">
+>                             <button
+>                               className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-m..."}
+>                               ref={null}
+>                               type="submit"
+>                               disabled={false}
+>                             >
+                                <_c type="submit" disabled={false} className="w-full bg-...">
+>                                 <button
+>                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+>                                   ref={null}
+>                                   type="submit"
+>                                   disabled={false}
+>                                 >
+                          ...
+            ...
 
-Import traces:
-  Client Component Browser:
-    ./store/useAuthStore.ts [Client Component Browser]
-    ./app/auth/auth.card.tsx [Client Component Browser]
-    ./app/auth/auth.card.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
+[00:00:14.313] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button>
+[00:00:14.313] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
-  Client Component SSR:
-    ./store/useAuthStore.ts [Client Component SSR]
-    ./app/auth/auth.card.tsx [Client Component SSR]
-    ./app/auth/auth.card.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-[01:24:47.490] Browser ERROR   ./store/useAuthStore.ts:171:5
-Parsing ecmascript source code failed
-  169 |   
-  170 |
-> 171 |     {
-      |     ^
-  172 |       name: "auth-storage",
-  173 |     },
-  174 |   ),
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
 
-Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-Import traces:
-  Client Component Browser:
-    ./store/useAuthStore.ts [Client Component Browser]
-    ./app/auth/auth.card.tsx [Client Component Browser]
-    ./app/auth/auth.card.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
+https://react.dev/link/hydration-mismatch
+[00:08:56.233] Server  LOG     ✓ Compiled in 144ms
+[00:09:19.479] Server  LOG     ✓ Compiled in 31ms
+[00:09:21.518] Server  LOG     ✓ Compiled in 36ms
+[00:09:24.982] Server  LOG     ✓ Compiled in 30ms
+[00:09:28.644] Server  LOG     ✓ Compiled in 29ms
+[00:09:33.509] Server  LOG     ✓ Compiled in 37ms
+[00:09:35.108] Server  LOG     ✓ Compiled in 37ms
+[00:10:05.017] Server  LOG     ✓ Compiled in 254ms
+[00:10:05.133] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 | useEffect(() => {
+  32 |   // Səhifəyə gələndə (mount olanda) köhnə alert-ləri sil
 
-  Client Component SSR:
-    ./store/useAuthStore.ts [Client Component SSR]
-    ./app/auth/auth.card.tsx [Client Component SSR]
-    ./app/auth/auth.card.tsx [Server Component]
-    ./app/auth/register/page.tsx [Server Component]
-[01:25:04.702] Server  LOG     ✓ Compiled in 8ms
-[01:25:08.242] Server  LOG     ✓ Compiled in 42ms
-[01:25:10.367] Server  LOG     ✓ Compiled in 6ms
-[01:25:14.390] Server  LOG     ✓ Compiled in 9ms
-[01:26:53.075] Browser LOG     Firebase login failed, checking local storage...
-[01:27:13.271] Server  LOG     ✓ Compiled in 46ms
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:05.991] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 | useEffect(() => {
+  32 |   // Səhifəyə gələndə (mount olanda) köhnə alert-ləri sil
+
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:14.718] Server  LOG     ✓ Compiled in 459ms
+[00:10:14.820] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 | useEffect(() => {
+  32 |   // Səhifəyə gələndə (mount olanda) köhnə alert-ləri sil
+
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:14.991] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 | useEffect(() => {
+  32 |   // Səhifəyə gələndə (mount olanda) köhnə alert-ləri sil
+
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:25.722] Server  LOG     ✓ Compiled in 60ms
+[00:10:25.824] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 |
+  32 |
+
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:25.993] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 |
+  32 |
+
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:28.411] Server  LOG     ✓ Compiled in 46ms
+[00:10:28.512] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 |
+  32 |
+
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:28.991] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 |
+  32 |
+
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:42.371] Server  LOG     ✓ Compiled in 103ms
+[00:10:42.474] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 |
+  32 |
+
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:42.992] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 |
+  32 |
+
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:46.468] Server  LOG     ✓ Compiled in 107ms
+[00:10:46.570] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 |
+  32 |
+
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:46.993] Browser ERROR   ./app/auth/auth-login.form.tsx:29:7
+Ecmascript file had an error
+  27 |   
+  28 |   const router = useRouter();
+> 29 | const setAlert = useAuthStore((state) => state.setAlert);
+     |       ^^^^^^^^
+  30 |
+  31 |
+  32 |
+
+the name `setAlert` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-login.form.tsx
+    ./app/auth/login/page.tsx
+[00:10:53.958] Server  LOG     ✓ Compiled in 12ms
+[00:11:36.184] Browser LOG     Firebase login failed, checking local storage...

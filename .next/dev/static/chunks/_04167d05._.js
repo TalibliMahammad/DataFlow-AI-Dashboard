@@ -435,7 +435,11 @@ const useAuthStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
                 alert
             })
     }), {
-    name: "auth-storage"
+    name: "auth-storage",
+    partialize: (state)=>({
+            registeredUser: state.registeredUser,
+            view: state.view
+        })
 }));
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);

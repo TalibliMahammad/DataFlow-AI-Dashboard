@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useRouter } from "next/navigation";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { CustomAlert } from "@/components/ui/CustomAlert";
 import { useAuthStore } from "@/store/useAuthStore";
@@ -24,7 +24,6 @@ export function AuthLoginForm() {
   const alert = useAuthStore((state) => state.alert);
   const loginWithGoogle = useAuthStore((state) => state.loginWithGoogle);
   const  [error, setError] = useState({ vEmail: false, vPassword: false });
-  
   const router = useRouter();
 
 
@@ -77,6 +76,15 @@ export function AuthLoginForm() {
       router.replace("/dashboard");
     }
   };
+
+useEffect(() => {
+  // Səhifəyə gələndə (mount olanda) köhnə alert-ləri sil
+  setAlert(null);
+  
+  // Səhifədən çıxanda (unmount olanda) təmizlik et
+  return () => setAlert(null);
+}, []);
+
 
   return (
     <>

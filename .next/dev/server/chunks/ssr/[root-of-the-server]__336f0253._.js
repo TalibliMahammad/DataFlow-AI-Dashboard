@@ -431,7 +431,11 @@ const useAuthStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
                 alert
             })
     }), {
-    name: "auth-storage"
+    name: "auth-storage",
+    partialize: (state)=>({
+            registeredUser: state.registeredUser,
+            view: state.view
+        })
 }));
 }),
 "[project]/components/activity-table.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {

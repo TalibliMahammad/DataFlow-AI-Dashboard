@@ -9,7 +9,7 @@ import {
   signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
-import { register } from "node:module";
+
 
 type ViewType =
   | "register"
@@ -167,6 +167,11 @@ export const useAuthStore = create<AuthState>()(
     }),
     {
       name: "auth-storage",
+      partialize: (state) => ({
+    registeredUser: state.registeredUser,
+    view: state.view,
+
+  }),
     },
   ),
 );
