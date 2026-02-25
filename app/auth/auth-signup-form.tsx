@@ -8,6 +8,7 @@ import { useAuthStore } from "@/store/useAuthStore";
 import { useRouter } from "next/navigation";
 import { CustomAlert } from "@/components/ui/CustomAlert";
 import Loader from "@/components/ui/loader";
+import ChatComponent from "@/components/chatbot";
 
 
 
@@ -308,7 +309,11 @@ export function AuthSignupForm() {
           <Chrome className="w-4 h-4" />
           <span className="text-sm font-medium"> Continue with Google</span>
         </button>
+
+
       </div>
+
+
     </>
   );
 }

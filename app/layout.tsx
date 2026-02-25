@@ -1,7 +1,6 @@
 import { Inter } from 'next/font/google';
 import './global.css';
-
-
+import { redirect } from 'next/navigation';
 
 
 const inter = Inter({ subsets: ['latin'] });
@@ -9,6 +8,8 @@ export const metadata = {
   title: 'Data-Flow AI Admin Dashboard',
   description: 'AI-powered task management',
 };
+
+
 
 export default function RootLayout({
   children,
@@ -24,9 +25,3 @@ export default function RootLayout({
   );
 }
 
-const styles = {
-  body: {
-    background: 'hsl(var(--background))',
-    color: 'hsl(var(--foreground))',
-  },
-};

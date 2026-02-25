@@ -53,21 +53,15 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 5
     }, this);
 }
-const styles = {
-    body: {
-        background: 'hsl(var(--background))',
-        color: 'hsl(var(--foreground))'
-    }
-};
 }),
 "[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";

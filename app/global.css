@@ -55,9 +55,7 @@
 
 /* Bütün elementlərə border rəngini tətbiq etmək üçün */
 @layer base {
-  * {
-    @apply border-border;
-  }
+
   body {
     @apply bg-background text-foreground;
   }
