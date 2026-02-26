@@ -301,7 +301,6 @@ const useAuthStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
             try {
                 await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["signInWithEmailAndPassword"])(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auth"], email, password);
                 set({
-                    view: "dashboard",
                     alert: {
                         message: "Logged in via Firebase",
                         type: "success"
@@ -312,9 +311,6 @@ const useAuthStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
                 console.log("Firebase login failed, checking local storage...");
                 const user = get().registeredUser;
                 if (user && user.email === email && user.password === password) {
-                    set({
-                        view: "dashboard"
-                    });
                     return true;
                 }
                 set({
@@ -348,8 +344,7 @@ const useAuthStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
     }), {
     name: "auth-storage",
     partialize: (state)=>({
-            registeredUser: state.registeredUser,
-            view: state.view
+            registeredUser: state.registeredUser
         })
 }));
 }),

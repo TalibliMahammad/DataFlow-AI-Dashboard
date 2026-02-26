@@ -8,6 +8,7 @@ import Header from "@/components/header";
 import MetricsGrid from "@/components/MetricsGrid";
 import { useAuthStore } from "@/store/useAuthStore";
 import Chatbot from "@/components/chatbot";
+import { CustomAlert } from "@/components/ui/CustomAlert";
 
 export default function Dashboard() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,9 @@ export default function Dashboard() {
 
   return (
     <>
+      <CustomAlert />
       <Chatbot metrics={liveMetrics} chartData={liveChart} />
+      
       <div className="flex h-screen bg-background flex-col lg:flex-row">
         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
         <main className="flex-1 lg:ml-64 flex flex-col h-screen overflow-hidden">

@@ -124,7 +124,7 @@ export const useAuthStore = create<AuthState>()(
         try {
           await signInWithEmailAndPassword(auth, email, password);
           set({
-            view: "dashboard",
+          
             alert: { message: "Logged in via Firebase", type: "success" },
           });
           return true;
@@ -133,9 +133,7 @@ export const useAuthStore = create<AuthState>()(
 
           const user = get().registeredUser;
           if (user && user.email === email && user.password === password) {
-            set({
-              view: "dashboard",
-            });
+            
             return true;
           }
 
@@ -169,7 +167,7 @@ export const useAuthStore = create<AuthState>()(
       name: "auth-storage",
       partialize: (state) => ({
     registeredUser: state.registeredUser,
-    view: state.view,
+   
 
   }),
     },
