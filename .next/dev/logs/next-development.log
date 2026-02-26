@@ -1,1 +1,21 @@
-[00:00:00.843] Server  LOG     ✓ Ready in 658ms
+[00:00:01.221] Server  LOG     ✓ Ready in 974ms
+[00:08:14.796] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:18.255] Browser LOG     GOOGLE LOGIN: false
+[00:08:20.093] Browser LOG     GOOGLE LOGIN: false
+[00:08:33.665] Browser LOG     GOOGLE LOGIN: false
+[00:08:35.818] Browser LOG     GOOGLE LOGIN: false
+[00:08:41.867] Browser LOG     GOOGLE LOGIN: false
+[00:13:19.103] Browser LOG     GOOGLE LOGIN: false
+[00:21:02.074] Browser LOG     GOOGLE LOGIN: false
+[00:21:15.094] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:21.120] Browser LOG     GOOGLE LOGIN: false
+[00:25:41.436] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:49.629] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:51.351] Browser LOG     GOOGLE LOGIN: false
+[00:25:53.390] Browser LOG     GOOGLE LOGIN: false
+[00:27:24.396] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:50.245] Browser LOG     GOOGLE LOGIN: false
+[00:27:54.427] Browser LOG     GOOGLE LOGIN: false
+[00:36:33.838] Browser LOG     Firebase login failed, checking local storage...
+[00:36:41.726] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render Dashboard MetricsGrid MetricsGrid
+[00:36:41.726] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render Dashboard TrafficChart TrafficChart
