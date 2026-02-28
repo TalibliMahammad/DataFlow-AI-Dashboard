@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { CustomAlert } from "@/components/ui/CustomAlert";
 import Loader from "@/components/ui/loader";
 import ChatComponent from "@/components/chatbot";
+import GuestButton from "@/components/ui/guestButton";
 
 
 
@@ -100,6 +101,7 @@ export function AuthSignupForm() {
 
     // 6. Əgər bütün validasiyalar keçərli olarsa, loading state-ni true edirik və signup funksiyasını çağırırıq
     setIsLoading(true);
+     await new Promise((r) => setTimeout(r, 0));
     try {
       const success = await signup(
         { fullName: vName, email: vEmail, password: vPassword },
@@ -119,7 +121,7 @@ export function AuthSignupForm() {
     }
   };
 
-  // Google ilə qeydiyyat funksiyası: loginWithGoogle funksiyasını çağırırıq və əgər uğurlu olarsa, istifadəçini dashboard-a yönləndiririk
+// Google ilə qeydiyyat funksiyası: loginWithGoogle funksiyasını çağırırıq və əgər uğurlu olarsa, istifadəçini dashboard-a yönləndiririk
   const handleGoogleLogin = async () => {
     const success = await loginWithGoogle();
 
@@ -133,7 +135,7 @@ export function AuthSignupForm() {
   return (
     <>
       <CustomAlert />
-      <div className="space-y-6">
+      <div className="  space-y-3 md:space-y-6 ">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2 flex-col flex gap-1">
             <Label
@@ -309,8 +311,7 @@ export function AuthSignupForm() {
           <Chrome className="w-4 h-4" />
           <span className="text-sm font-medium"> Continue with Google</span>
         </button>
-
-
+        <GuestButton/>
       </div>
 
 

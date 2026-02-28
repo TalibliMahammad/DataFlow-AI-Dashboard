@@ -26,8 +26,9 @@ export function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (op
     const router = useRouter();
 
 
+
   const navigationItems = [
-    { name: "Dashboard", href: "/", icon: Home },
+    { name: "Dashboard", href: "/dashboard", icon: Home },
     { name: "Analytics", href: "/analytics", icon: BarChart3 },
     { name: "Users", href: "/users", icon: Users },
     { name: "Reports", href: "/reports", icon: FileText },

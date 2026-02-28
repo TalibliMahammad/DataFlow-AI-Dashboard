@@ -16,7 +16,7 @@ export default function Dashboard() {
   const [liveMetrics, setLiveMetrics] = useState<any[]>([]);
   const [liveChart, setLiveChart] = useState<any[]>([]);
 
-  // ✅ useCallback ilə wrap et — hər render-də yeni funksiya yaranmasın
+
   const handleMetricsUpdate = useCallback((data: any[]) => {
     setLiveMetrics(data);
   }, []);
@@ -39,7 +39,7 @@ export default function Dashboard() {
       <div className="flex h-screen bg-background flex-col lg:flex-row">
         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
         <main className="flex-1 lg:ml-64 flex flex-col h-screen overflow-hidden">
-          <Header />
+          <Header isOpen={isOpen} setIsOpen={setIsOpen} />
           <div className="flex-1 overflow-y-auto p-3 no-scrollbar sm:p-4 lg:p-6">
             <MetricsGrid onUpdate={handleMetricsUpdate} />
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">

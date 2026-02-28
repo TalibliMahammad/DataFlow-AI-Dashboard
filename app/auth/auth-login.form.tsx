@@ -11,6 +11,7 @@ import { CustomAlert } from "@/components/ui/CustomAlert";
 import { useAuthStore } from "@/store/useAuthStore";
 import { Chrome } from "lucide-react";
 import Loader from "@/components/ui/loader";
+import GuestButton from "@/components/ui/guestButton";
 
 
 
@@ -175,6 +176,7 @@ useEffect(() => {
           <Chrome className="w-4 h-4 " />
           <span className="text-sm font-medium"> Continue with Google</span>
         </button>
+        <GuestButton/>
       </div>
     </>
   );

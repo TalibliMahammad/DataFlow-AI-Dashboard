@@ -101,7 +101,7 @@ export const useAuthStore = create<AuthState>()(
       
       set({
         registeredUser: userData,
-        view: "login",
+       
         alert: { message: "Account created in Firebase!", type: "success" },
       });
       return true;
@@ -113,7 +113,7 @@ export const useAuthStore = create<AuthState>()(
     // 3. MANUAL HİSSƏ: Artıq bura gəlibsə, datanın dolu olduğuna əminik
     set({
       registeredUser: userData,
-      view: "login",
+     
       alert: { message: "Manual signup successful!", type: "success" },
     });
     return true;

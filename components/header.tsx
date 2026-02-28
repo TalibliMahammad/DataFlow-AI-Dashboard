@@ -3,9 +3,20 @@ import { useAuthStore } from "@/store/useAuthStore";
 import { Calendar, Download, Menu, Settings, X } from "lucide-react";
 import React, { useState } from "react";
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+
+
+interface HeaderProps{
+  isOpen:boolean;
+  setIsOpen:(open:boolean)=>void;
+}
+
+
+const Header = ({isOpen, setIsOpen}:HeaderProps) => {
+
   const user = useAuthStore((state) => state.registeredUser);
+
+
+  
   return (
     <header className="bg-card border-b border-border sticky top-0 z-10 flex-shrink-0">
       <div className="px-3 sm:px-4 lg:px-6 py-3 sm:py-4 lg:py-5 flex flex-col sm:flex-row items-start sm:items-center justify-start lg:justify-between gap-3 sm:gap-4">

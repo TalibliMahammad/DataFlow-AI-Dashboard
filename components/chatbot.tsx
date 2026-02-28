@@ -80,7 +80,7 @@ const handleSend = async () => {
   };
 
   return (
-   <div className="fixed bottom-10 right-10 z-[9999] flex items-end justify-end pointer-events-none">
+   <div className="fixed bottom-10   right-5  md:right-15 z-[9999] flex items-end justify-end pointer-events-none">
   <AnimatePresence>
     {isOpen && (
       <motion.div
@@ -89,8 +89,8 @@ const handleSend = async () => {
           opacity: 1, 
           scale: 1, 
           y: 0,
-          width: isFullScreen ? "min(95vw, 900px)" : "400px",
-          height: isFullScreen ? "85vh" : "600px"
+          width: isFullScreen ? "min(80vw, 900px)" : "370px",
+          height: isFullScreen ? "80vh" : "600px"
         }}
         exit={{ opacity: 0, scale: 0.9, y: 40 }}
         /* Rənglərin əzilməməsi üçün bg-card və border-border istifadə edirik */

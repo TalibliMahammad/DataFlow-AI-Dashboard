@@ -1,190 +1,2248 @@
-[00:00:00.570] Server  LOG     ✓ Ready in 442ms
-[00:00:25.273] Browser LOG     Firebase login failed, checking local storage...
-[00:00:31.044] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render Dashboard MetricsGrid MetricsGrid
-[00:00:31.044] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render Dashboard TrafficChart TrafficChart
-[00:02:12.438] Server  LOG     ✓ Compiled in 24ms
-[00:02:31.134] Server  LOG     ✓ Compiled in 58ms
-[00:02:45.746] Browser LOG     Firebase login failed, checking local storage...
-[00:02:59.909] Server  LOG     ✓ Compiled in 33ms
-[00:03:04.220] Browser LOG     Firebase login failed, checking local storage...
-[00:03:16.886] Browser LOG     Firebase login failed, checking local storage...
-[00:03:39.271] Browser LOG     Firebase login failed, checking local storage...
-[00:03:54.294] Server  LOG     ✓ Compiled in 37ms
-[00:04:34.526] Browser LOG     Firebase login failed, checking local storage...
-[00:04:41.702] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render Dashboard MetricsGrid MetricsGrid
-[00:04:41.702] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render Dashboard TrafficChart TrafficChart
-[00:05:02.576] Browser LOG     Firebase login failed, checking local storage...
-[00:05:43.785] Server  LOG     ✓ Compiled in 34ms
-[00:05:54.809] Server  LOG     ✓ Compiled in 266ms
-[00:05:54.911] Browser ERROR   ./app/dashboard/page.tsx:36:7
+[00:00:01.035] Server  LOG     ✓ Ready in 870ms
+[00:17:10.396] Server  LOG     ✓ Compiled in 327ms
+[00:17:21.220] Server  LOG     ✓ Compiled in 35ms
+[00:17:33.503] Server  LOG     ✓ Compiled in 20ms
+[00:17:43.870] Server  LOG     ✓ Compiled in 61ms
+[00:17:50.561] Server  LOG     ✓ Compiled in 14ms
+[00:18:36.299] Server  LOG     ✓ Compiled in 49ms
+[00:18:40.032] Server  LOG     ✓ Compiled in 36ms
+[00:18:53.753] Server  LOG     ✓ Compiled in 38ms
+[00:19:04.647] Server  LOG     ✓ Compiled in 43ms
+[00:19:12.868] Server  LOG     ✓ Compiled in 23ms
+[00:19:21.788] Server  LOG     ✓ Compiled in 116ms
+[00:19:25.082] Server  LOG     ✓ Compiled in 53ms
+[00:19:29.272] Server  LOG     ✓ Compiled in 24ms
+[00:20:07.842] Server  LOG     ✓ Compiled in 15ms
+[00:20:07.929] Browser ERROR   uncaughtError: Error: `TabsTrigger` must be used within `Tabs`
+[00:20:16.899] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:20:16.961] Server  LOG     ✓ Compiled in 21ms
+[00:20:47.029] Server  LOG     ✓ Compiled in 16ms
+[00:20:52.149] Server  LOG     ✓ Compiled in 45ms
+[00:20:54.990] Server  LOG     ✓ Compiled in 16ms
+[00:21:51.900] Server  LOG     ✓ Compiled in 29ms
+[00:22:03.694] Server  LOG     ✓ Compiled in 26ms
+[00:22:05.592] Server  LOG     ✓ Compiled in 73ms
+[00:22:10.604] Server  LOG     ✓ Compiled in 16ms
+[00:22:12.255] Server  LOG     ✓ Compiled in 47ms
+[00:22:17.541] Server  LOG     ✓ Compiled in 15ms
+[00:22:19.548] Server  LOG     ✓ Compiled in 21ms
+[00:22:19.603] Browser ERROR   uncaughtError: Error: `TabsTrigger` must be used within `Tabs`
+[00:22:28.835] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:22:28.889] Server  LOG     ✓ Compiled in 30ms
+[00:22:31.485] Server  LOG     ✓ Compiled in 23ms
+[00:22:31.538] Browser ERROR   uncaughtError: Error: `TabsList` must be used within `Tabs`
+[00:22:34.731] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:22:34.852] Server  ERROR   ⨯ Error: `TabsList` must be used within `Tabs`
+[00:22:34.860] Server  LOG     ✓ Compiled in 31ms
+[00:22:34.862] Browser ERROR   uncaughtError: Error: `TabsList` must be used within `Tabs`
+[00:22:35.207] Browser ERROR   uncaughtError: Error: `TabsList` must be used within `Tabs`
+[00:23:20.936] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:23:21.000] Server  LOG     ✓ Compiled in 50ms
+[00:23:21.993] Server  LOG     ✓ Compiled in 26ms
+[00:23:25.604] Server  LOG     ✓ Compiled in 121ms
+[00:23:25.707] Browser ERROR   ./app/auth/auth.card.tsx:64:14
 Parsing ecmascript source code failed
-  34 |     <>
-  35 |     <
-> 36 |       <Chatbot metrics={liveMetrics} chartData={liveChart} />
-     |       ^
-  37 |       <div className="flex h-screen bg-background flex-col lg:flex-row">
-  38 |         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-  39 |         <main className="flex-1 lg:ml-64 flex flex-col h-screen overflow-hidden">
+  62 |     <div className="relative flex justify-center items-center  overflow-hidden p-4">
+  63 |       <span  className="  bg-red-500 mt-4 data-[state=active]:bg-primary/20 data-[state=active]:text-primary text-foreground/70 rounded-md transition-all"
+> 64 |             >></span>
+     |              ^
+  65 |       <motion.div
+  66 |         variants={cardVariants}
+  67 |         initial="hidden"
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import trace:
+  Server Component:
+    ./app/auth/auth.card.tsx
+    ./app/auth/register/page.tsx
+[00:23:32.972] Server  LOG     ✓ Compiled in 15ms
+[00:23:39.411] Server  LOG     ✓ Compiled in 13ms
+[00:23:44.454] Server  LOG     ✓ Compiled in 40ms
+[00:23:48.052] Server  LOG     ✓ Compiled in 14ms
+[00:23:59.673] Server  LOG     ✓ Compiled in 46ms
+[00:24:03.598] Server  LOG     ✓ Compiled in 14ms
+[00:24:06.416] Server  LOG     ✓ Compiled in 14ms
+[00:24:13.924] Server  LOG     ✓ Compiled in 36ms
+[00:24:39.926] Server  LOG     ✓ Compiled in 24ms
+[00:24:45.435] Server  LOG     ✓ Compiled in 23ms
+[00:24:49.591] Server  LOG     ✓ Compiled in 55ms
+[00:24:52.180] Server  LOG     ✓ Compiled in 31ms
+[00:24:57.885] Server  LOG     ✓ Compiled in 39ms
+[00:25:02.233] Server  LOG     ✓ Compiled in 56ms
+[00:25:05.823] Server  LOG     ✓ Compiled in 17ms
+[00:25:07.247] Server  LOG     ✓ Compiled in 38ms
+[00:25:08.829] Server  LOG     ✓ Compiled in 31ms
+[00:25:14.253] Server  LOG     ✓ Compiled in 30ms
+[00:25:20.885] Server  LOG     ✓ Compiled in 29ms
+[00:25:23.905] Server  LOG     ✓ Compiled in 19ms
+[00:25:26.850] Server  LOG     ✓ Compiled in 16ms
+[00:25:44.597] Server  LOG     ✓ Compiled in 32ms
+[00:25:48.968] Server  LOG     ✓ Compiled in 19ms
+[00:25:58.711] Server  LOG     ✓ Compiled in 32ms
+[00:26:02.265] Server  LOG     ✓ Compiled in 47ms
+[00:26:05.042] Server  LOG     ✓ Compiled in 48ms
+[00:26:06.017] Server  LOG     ✓ Compiled in 14ms
+[00:26:25.998] Server  LOG     ✓ Compiled in 17ms
+[00:26:32.695] Server  LOG     ✓ Compiled in 41ms
+[00:26:33.696] Server  LOG     ✓ Compiled in 32ms
+[00:26:36.665] Server  LOG     ✓ Compiled in 40ms
+[00:26:39.029] Server  LOG     ✓ Compiled in 18ms
+[00:26:40.507] Server  LOG     ✓ Compiled in 14ms
+[00:26:42.801] Server  LOG     ✓ Compiled in 18ms
+[00:26:43.848] Server  LOG     ✓ Compiled in 32ms
+[00:26:46.299] Server  LOG     ✓ Compiled in 13ms
+[00:26:49.374] Server  LOG     ✓ Compiled in 14ms
+[00:26:56.120] Server  LOG     ✓ Compiled in 18ms
+[00:28:27.375] Server  LOG     ✓ Compiled in 26ms
+[00:28:34.942] Server  LOG     ✓ Compiled in 23ms
+[00:28:45.817] Server  LOG     ✓ Compiled in 14ms
+[00:28:56.012] Server  LOG     ✓ Compiled in 47ms
+[00:29:02.970] Server  LOG     ✓ Compiled in 25ms
+[00:30:10.281] Server  LOG     ✓ Compiled in 71ms
+[00:30:10.382] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:7
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <
+> 314 |       </div>
+      |       ^
+  315 |
+  316 |
+  317 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:10.382] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:8
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <
+> 314 |       </div>
+      |        ^^^^^
+  315 |
+  316 |
+  317 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:11.719] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:7
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <Gu
+> 314 |       </div>
+      |       ^
+  315 |
+  316 |
+  317 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:11.719] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:8
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <Gu
+> 314 |       </div>
+      |        ^^^^^
+  315 |
+  316 |
+  317 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:13.003] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:7
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <Gust
+> 314 |       </div>
+      |       ^
+  315 |
+  316 |
+  317 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:13.003] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:8
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <Gust
+> 314 |       </div>
+      |        ^^^^^
+  315 |
+  316 |
+  317 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:15.301] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:7
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <Gues
+> 314 |       </div>
+      |       ^
+  315 |
+  316 |
+  317 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:15.301] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:8
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <Gues
+> 314 |       </div>
+      |        ^^^^^
+  315 |
+  316 |
+  317 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:16.637] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:7
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <Guest
+> 314 |       </div>
+      |       ^
+  315 |
+  316 |
+  317 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:16.637] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:8
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <Guest
+> 314 |       </div>
+      |        ^^^^^
+  315 |
+  316 |
+  317 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:18.026] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:7
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <GuestBu
+> 314 |       </div>
+      |       ^
+  315 |
+  316 |
+  317 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:18.026] Browser ERROR   ./app/auth/auth-signup-form.tsx:314:8
+Parsing ecmascript source code failed
+  312 |         </button>
+  313 |    <GuestBu
+> 314 |       </div>
+      |        ^^^^^
+  315 |
+  316 |
+  317 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:38.490] Server  LOG     ✓ Compiled in 19ms
+[00:30:38.591] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:7
+Parsing ecmascript source code failed
+  314 |         <
+  315 |    
+> 316 |       </div>
+      |       ^
+  317 |
+  318 |
+  319 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:38.591] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:8
+Parsing ecmascript source code failed
+  314 |         <
+  315 |    
+> 316 |       </div>
+      |        ^^^^^
+  317 |
+  318 |
+  319 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:30:40.892] Server  LOG     ✓ Compiled in 16ms
+[00:30:41.007] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. guestButton
+[00:30:41.007] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. guestButton
+[00:31:57.924] Server  LOG     ✓ Compiled in 21ms
+[00:31:58.025] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:7
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |       ^
+  317 |
+  318 |
+  319 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:31:58.025] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:8
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |        ^^^^^
+  317 |
+  318 |
+  319 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:01.933] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:7
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |       ^
+  317 |
+  318 |
+  319 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:01.933] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:8
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |        ^^^^^
+  317 |
+  318 |
+  319 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:05.522] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:7
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |       ^
+  317 |
+  318 |
+  319 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:05.522] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:8
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |        ^^^^^
+  317 |
+  318 |
+  319 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:08.767] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:7
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |       ^
+  317 |
+  318 |
+  319 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:08.767] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:8
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |        ^^^^^
+  317 |
+  318 |
+  319 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:09.067] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:7
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |       ^
+  317 |
+  318 |
+  319 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:09.067] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:8
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |        ^^^^^
+  317 |
+  318 |
+  319 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:09.589] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:7
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |       ^
+  317 |
+  318 |
+  319 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:09.589] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:8
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |        ^^^^^
+  317 |
+  318 |
+  319 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:09.813] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:7
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |       ^
+  317 |
+  318 |
+  319 |     </>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:09.813] Browser ERROR   ./app/auth/auth-signup-form.tsx:316:8
+Parsing ecmascript source code failed
+  314 |         </>
+  315 |    
+> 316 |       </div>
+      |        ^^^^^
+  317 |
+  318 |
+  319 |     </>
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./app/auth/auth-signup-form.tsx
+    ./app/auth/register/page.tsx
+[00:32:15.047] Server  LOG     ✓ Compiled in 208ms
+[00:32:38.179] Server  LOG     ✓ Compiled in 37ms
+[00:32:43.684] Server  LOG     ✓ Compiled in 14ms
+[00:33:22.876] Server  LOG     ✓ Compiled in 15ms
+[00:33:27.682] Server  LOG     ✓ Compiled in 40ms
+[00:47:27.042] Server  LOG     ✓ Compiled in 16ms
+[00:47:33.880] Server  LOG     ✓ Compiled in 20ms
+[00:47:33.981] Browser ERROR   ./components/ui/guestButton.tsx:7:3
+Parsing ecmascript source code failed
+   5 | const 
+   6 |
+>  7 |   return (
+     |   ^^^^^^
+   8 |     <button
+   9 |           
+  10 |           className="glow-effect w-full flex items-center  justify-center gap-2 py-2.5 rounded-lg bg-white/5 border  border-white/10   text-foreground/80 transition-color  duration-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+
+Expected ident
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:47:39.279] Server  LOG     ✓ Compiled in 20ms
+[00:47:39.380] Browser ERROR   ./components/ui/guestButton.tsx:5:7
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |
+> 5 | const clikc
+    |       ^^^^^
+  6 |
+  7 |   return (
+  8 |     <button
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:47:41.866] Browser ERROR   ./components/ui/guestButton.tsx:5:7
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |
+> 5 | const clikcto
+    |       ^^^^^^^
+  6 |
+  7 |   return (
+  8 |     <button
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:47:49.733] Browser ERROR   ./components/ui/guestButton.tsx:5:7
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |
+> 5 | const clickTo
+    |       ^^^^^^^
+  6 |
+  7 |   return (
+  8 |     <button
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:47:53.842] Browser ERROR   ./components/ui/guestButton.tsx:5:7
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |
+> 5 | const clickToDash
+    |       ^^^^^^^^^^^
+  6 |
+  7 |   return (
+  8 |     <button
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:47:59.224] Server  LOG     ✓ Compiled in 13ms
+[00:48:32.467] Server  LOG     ✓ Compiled in 21ms
+[00:49:18.742] Server  LOG     ✓ Compiled in 25ms
+[00:49:18.827] Browser ERROR   uncaughtError: ReferenceError: await is not defined
+[00:51:10.118] Server  LOG     ✓ Compiled in 17ms
+[00:51:10.219] Browser ERROR   ./components/ui/guestButton.tsx:6:13
+Parsing ecmascript source code failed
+  4 |   const clickToDash = {
+  5 |     await ,
+> 6 |       await new Promise((r) => setTimeout(r, 2000));
+    |             ^^^
+  7 |   };
+  8 |
+  9 |   return (
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:14.282] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new 
+    |           ^^^
+  6 |       await new Promise((r) => setTimeout(r, 2000));
+  7 |   };
+  8 |
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:15.582] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new Pro
+    |           ^^^
+  6 |       await new Promise((r) => setTimeout(r, 2000));
+  7 |   };
+  8 |
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:18.696] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new Promise 
+    |           ^^^
+  6 |       await new Promise((r) => setTimeout(r, 2000));
+  7 |   };
+  8 |
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:21.647] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new Promise (())
+    |           ^^^
+  6 |       await new Promise((r) => setTimeout(r, 2000));
+  7 |   };
+  8 |
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:26.431] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new Promise ((r)=>)
+    |           ^^^
+  6 |       await new Promise((r) => setTimeout(r, 2000));
+  7 |   };
+  8 |
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:28.590] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new Promise ((r)=>set)
+    |           ^^^
+  6 |       await new Promise((r) => setTimeout(r, 2000));
+  7 |   };
+  8 |
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:30.542] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new Promise ((r)=>setTimeout)
+    |           ^^^
+  6 |       await new Promise((r) => setTimeout(r, 2000));
+  7 |   };
+  8 |
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:33.373] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new Promise ((r)=>setTimeout(r))
+    |           ^^^
+  6 |       await new Promise((r) => setTimeout(r, 2000));
+  7 |   };
+  8 |
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:34.501] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new Promise ((r)=>setTimeout(r,))
+    |           ^^^
+  6 |       await new Promise((r) => setTimeout(r, 2000));
+  7 |   };
+  8 |
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:36.442] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new Promise ((r)=>setTimeout(r,1000))
+    |           ^^^
+  6 |       await new Promise((r) => setTimeout(r, 2000));
+  7 |   };
+  8 |
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:42.505] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new Promise ((r)=>setTimeout(r,1000))
+    |           ^^^
+  6 |   };
+  7 |
+  8 |   return (
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:51:44.778] Browser ERROR   ./components/ui/guestButton.tsx:5:11
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     await new Promise ((r)=>setTimeout(r,1000))
+    |           ^^^
+  6 |       await new Promise((r) => setTimeout(r, 2000));
+  7 |   };
+  8 |
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:52:02.616] Browser ERROR   ./components/ui/guestButton.tsx:6:13
+Parsing ecmascript source code failed
+  4 |   const clickToDash = {
+  5 |   
+> 6 |       await new Promise((r) => setTimeout(r, 2000));
+    |             ^^^
+  7 |   };
+  8 |
+  9 |   return (
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:52:05.998] Browser ERROR   ./components/ui/guestButton.tsx:5:13
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |       await new Promise((r) => setTimeout(r, 2000));
+    |             ^^^
+  6 |   };
+  7 |
+  8 |   return (
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:52:08.752] Browser ERROR   ./components/ui/guestButton.tsx:5:12
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |      await new Promise((r) => setTimeout(r, 2000));
+    |            ^^^
+  6 |   };
+  7 |
+  8 |   return (
+
+Unexpected token `new`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:52:32.106] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:52:34.297] Server  LOG     ✓ Compiled in 17ms
+[00:52:34.350] Browser ERROR   uncaughtError: ReferenceError: set is not defined
+[00:52:35.974] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:52:36.014] Server  LOG     ✓ Compiled in 20ms
+[00:52:36.093] Server  ERROR   ⨯ ReferenceError: setT is not defined
+[00:52:36.105] Browser ERROR   uncaughtError: ReferenceError: setT is not defined
+[00:52:36.510] Browser ERROR   uncaughtError: ReferenceError: setT is not defined
+[00:52:38.143] Server  LOG     ✓ Compiled in 15ms
+[00:52:38.245] Browser ERROR   ./components/ui/guestButton.tsx:5:16
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     setTimeout(())
+    |                ^
+  6 |
+  7 |
+  8 |   };
+
+Unexpected token `(`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:52:40.650] Browser ERROR   ./components/ui/guestButton.tsx:5:16
+Parsing ecmascript source code failed
+  3 | const GuestButton = () => {
+  4 |   const clickToDash = {
+> 5 |     setTimeout(()=>{
+    |                ^
+  6 |         
+  7 |     })
+  8 |
+
+Unexpected token `(`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:52:46.239] Browser ERROR   ./components/ui/guestButton.tsx:6:16
+Parsing ecmascript source code failed
+  4 |   const clickToDash = {
+  5 |     
+> 6 |     setTimeout(()=>{
+    |                ^
+  7 |
+  8 |     })
+  9 |
+
+Unexpected token `(`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:52:55.515] Server  LOG     ✓ Compiled in 34ms
+[00:52:55.616] Browser ERROR   ./components/ui/guestButton.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | const GuestButton = () => {
+> 4 |   const clickToDash {
+    |         ^^^^^^^^^^^
+  5 |
+  6 |     setTimeout(()=>{
+  7 |
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:52:55.616] Browser ERROR   ./components/ui/guestButton.tsx:8:6
+Parsing ecmascript source code failed
+   6 |     setTimeout(()=>{
+   7 |
+>  8 |     })
+     |      ^
+   9 |
+  10 |
+  11 |   };
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:52:57.677] Server  LOG     ✓ Compiled in 15ms
+[00:52:57.778] Browser ERROR   ./components/ui/guestButton.tsx:6:16
+Parsing ecmascript source code failed
+  4 |   const clickToDash =({
+  5 |
+> 6 |     setTimeout(()=>{
+    |                ^
+  7 |
+  8 |     })
+  9 |
+
+Unexpected token `(`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:52:58.799] Server  LOG     ✓ Compiled in 20ms
+[00:52:58.900] Browser ERROR   ./components/ui/guestButton.tsx:4:22
+Parsing ecmascript source code failed
+  2 |
+  3 | const GuestButton = () => {
+> 4 |   const clickToDash =(){
+    |                      ^^
+  5 |
+  6 |     setTimeout(()=>{
+  7 |
+
+Parenthesized expression cannot be empty
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:53:02.601] Server  LOG     ✓ Compiled in 15ms
+[00:53:02.703] Browser ERROR   ./components/ui/guestButton.tsx:13:3
+Parsing ecmascript source code failed
+  11 |   };
+  12 |
+> 13 |   return (
+     |   ^^^^^^^^
+> 14 |     <button className="glow-effect w-full flex items-center  justify-center gap-2 py-2.5 rounded-lg bg-white/5 border  border-white/10   text-foreground/80 transition-color  duration-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 15 |       <span className="text-sm  font-bold ">Guest</span>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 16 |     </button>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 17 |   );
+     | ^^^^^
+  18 | };
+  19 |
+  20 | export default GuestButton;
+
+Return statement is not allowed here
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:53:04.038] Browser ERROR   ./components/ui/guestButton.tsx:15:3
+Parsing ecmascript source code failed
+  13 |   };
+  14 |
+> 15 |   return (
+     |   ^^^^^^^^
+> 16 |     <button className="glow-effect w-full flex items-center  justify-center gap-2 py-2.5 rounded-lg bg-white/5 border  border-white/10   text-foreground/80 transition-color  duration-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 17 |       <span className="text-sm  font-bold ">Guest</span>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 18 |     </button>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   );
+     | ^^^^^
+  20 | };
+  21 |
+  22 | export default GuestButton;
+
+Return statement is not allowed here
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:53:06.500] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:53:12.411] Server  LOG     ✓ Compiled in 14ms
+[00:53:22.499] Server  LOG     ✓ Compiled in 15ms
+[00:53:35.723] Server  LOG     ✓ Compiled in 19ms
+[00:53:37.741] Server  LOG     ✓ Compiled in 42ms
+[00:53:39.764] Server  LOG     ✓ Compiled in 42ms
+[00:53:40.875] Server  LOG     ✓ Compiled in 20ms
+[00:53:47.533] Server  LOG     ✓ Compiled in 19ms
+[00:53:47.634] Browser ERROR   ./components/ui/guestButton.tsx:8:16
+Parsing ecmascript source code failed
+   6 |
+   7 |     setTimeout(()=>{
+>  8 | router.replace(/dashboard)
+     |                ^^^^^^^^^^^
+   9 |     },1000)
+  10 |
+  11 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:53:53.165] Server  LOG     ✓ Compiled in 20ms
+[00:53:53.266] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () => {
+    | ^^^^^
+  4 |
+  5 |   const clickToDash = () =>{
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:53:59.876] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () => 
+    | ^^^^^
+  4 |     {
+  5 |
+  6 |   const clickToDash = () =>{
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:54:01.327] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () => {
+    | ^^^^^
+  4 |
+  5 |   const clickToDash = () =>{
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:54:03.707] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () ={
+    | ^^^^^
+  4 |
+  5 |   const clickToDash = () =>{
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:54:05.751] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () ={
+    | ^^^^^
+  4 |
+  5 |
+  6 |     
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:54:07.581] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () ={
+    | ^^^^^
+  4 |
+  5 | const 
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:55:22.979] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () ={
+    | ^^^^^
+  4 |
+  5 | const router
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:55:26.347] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () ={
+    | ^^^^^
+  4 |
+  5 | const router = useR
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:55:27.490] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () ={
+    | ^^^^^
+  4 |
+  5 | const router = useRro
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:55:30.220] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () ={
+    | ^^^^^
+  4 |
+  5 | const router = useRoy
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:55:33.310] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () ={
+    | ^^^^^
+  4 |
+  5 | const router = useRouter()
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:55:39.494] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = () =>{
+    | ^^^^^
+  4 |
+  5 | const router = useRouter()
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:55:44.331] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = ()=>{
+    | ^^^^^
+  4 |
+  5 | const router = useRouter()
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:56:00.411] Browser ERROR   ./components/ui/guestButton.tsx:3:1
+Parsing ecmascript source code failed
+  1 | import React from "react";
+  2 | import 
+> 3 | const GuestButton = ()=>{
+    | ^^^^^
+  4 |
+  5 | const router = useRoutet()
+  6 |
+
+Expected 'from', got 'const'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:56:04.879] Server  LOG     ✓ Compiled in 19ms
+[00:56:04.980] Browser ERROR   ./components/ui/guestButton.tsx:10:16
+Parsing ecmascript source code failed
+   8 |
+   9 |     setTimeout(()=>{
+> 10 | router.replace(/dashboard)
+     |                ^^^^^^^^^^^
+  11 |     },1000)
+  12 |
+  13 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:56:10.356] Browser ERROR   ./components/ui/guestButton.tsx:10:16
+Parsing ecmascript source code failed
+   8 |
+   9 |     setTimeout(()=>{
+> 10 | router.replace(/dashboard)
+     |                ^^^^^^^^^^^
+  11 |     },1000)
+  12 |
+  13 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:56:12.457] Browser ERROR   ./components/ui/guestButton.tsx:10:16
+Parsing ecmascript source code failed
+   8 |
+   9 |     setTimeout(()=>{
+> 10 | router.replace(/dashboard)
+     |                ^^^^^^^^^^^
+  11 |     },1000)
+  12 |
+  13 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:56:15.172] Browser ERROR   ./components/ui/guestButton.tsx:10:16
+Parsing ecmascript source code failed
+   8 |
+   9 |     setTimeout(()=>{
+> 10 | router.replace(/dashboard)
+     |                ^^^^^^^^^^^
+  11 |     },1000)
+  12 |
+  13 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:56:17.287] Browser ERROR   ./components/ui/guestButton.tsx:10:16
+Parsing ecmascript source code failed
+   8 |
+   9 |     setTimeout(()=>{
+> 10 | router.replace(/dashboard)
+     |                ^^^^^^^^^^^
+  11 |     },1000)
+  12 |
+  13 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:56:22.041] Browser ERROR   ./components/ui/guestButton.tsx:10:16
+Parsing ecmascript source code failed
+   8 |
+   9 |     setTimeout(()=>{
+> 10 | router.replace(/dashboard)
+     |                ^^^^^^^^^^^
+  11 |     },1000)
+  12 |
+  13 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:56:34.623] Server  LOG     ✓ Compiled in 20ms
+[00:56:36.059] Server  LOG     ✓ Compiled in 21ms
+[00:56:38.898] Server  LOG     ✓ Compiled in 14ms
+[00:56:41.132] Server  LOG     ✓ Compiled in 18ms
+[00:56:42.410] Server  LOG     ✓ Compiled in 18ms
+[00:56:49.810] Server  LOG     ✓ Compiled in 62ms
+[00:56:49.910] Browser ERROR   ./components/ui/guestButton.tsx:15:6
+Parsing ecmascript source code failed
+  13 |     <button  onClick={className="glow-effect w-full flex items-center  justify-center gap-2 py-2.5 rounded-lg bg-white/5 border  border-white/10   text-foreground/80 transition-color  duration-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+  14 |       <span className="text-sm  font-bold ">Guest</span>
+> 15 |     </button>
+     |      ^^^^^^^^
+  16 |   );
+  17 | };
+  18 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:56:51.848] Server  LOG     ✓ Compiled in 55ms
+[00:56:51.949] Browser ERROR   ./components/ui/guestButton.tsx:13:22
+Parsing ecmascript source code failed
+  11 |
+  12 |   return (
+> 13 |     <button  onClick={}
+     |                      ^^
+  14 |     className="glow-effect w-full flex items-center  justify-center gap-2 py-2.5 rounded-lg bg-white/5 border  border-white/10   text-foreground/80 transition-color  duration-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+  15 |       <span className="text-sm  font-bold ">Guest</span>
+  16 |     </button>
+
+JSX attributes must only be assigned a non-empty expression
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:57:52.368] Server  LOG     ✓ Compiled in 19ms
+[00:57:52.424] Browser ERROR   uncaughtError: ReferenceError: isLoading is not defined
+[00:57:56.976] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:57:57.015] Server  LOG     ✓ Compiled in 50ms
+[00:57:57.089] Server  ERROR   ⨯ ReferenceError: isLoading is not defined
+[00:57:57.106] Browser ERROR   uncaughtError: ReferenceError: isLoading is not defined
+[00:57:57.615] Browser ERROR   uncaughtError: ReferenceError: isLoading is not defined
+[00:58:02.196] Server  LOG     ✓ Compiled in 27ms
+[00:58:02.298] Browser ERROR   ./components/ui/guestButton.tsx:8:3
+Parsing ecmascript source code failed
+   6 |   const 
+   7 |
+>  8 |   const clickToDash = () => {
+     |   ^^^^^
+   9 |     setTimeout(() => {
+  10 |       router.replace("/dashboard");
+  11 |     }, 1000);
+
+Expected ident
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:58:03.380] Server  LOG     ✓ Compiled in 36ms
+[00:58:03.482] Browser ERROR   ./components/ui/guestButton.tsx:6:9
+Parsing ecmascript source code failed
+  4 | const GuestButton = () => {
+  5 |   const router = useRouter();
+> 6 |   const []
+    |         ^^
+  7 |
+  8 |   const clickToDash = () => {
+  9 |     setTimeout(() => {
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:58:13.520] Browser ERROR   ./components/ui/guestButton.tsx:6:9
+Parsing ecmascript source code failed
+  4 | const GuestButton = () => {
+  5 |   const router = useRouter();
+> 6 |   const [isLoading, setIsLoading]
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 |   const clickToDash = () => {
+  9 |     setTimeout(() => {
+
+'const' declarations must be initialized
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:58:15.311] Server  LOG     ✓ Compiled in 18ms
+[00:58:15.413] Browser ERROR   ./components/ui/guestButton.tsx:8:3
+Parsing ecmascript source code failed
+   6 |   const [isLoading, setIsLoading]= 
+   7 |
+>  8 |   const clickToDash = () => {
+     |   ^^^^^
+   9 |     setTimeout(() => {
+  10 |       router.replace("/dashboard");
+  11 |     }, 1000);
 
 Expression expected
 
 Import traces:
   Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[00:05:56.529] Browser ERROR   ./app/dashboard/page.tsx:36:7
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[00:58:17.621] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:58:17.722] Server  ERROR   ⨯ ReferenceError: useSta is not defined
+[00:58:18.079] Browser ERROR   uncaughtError: ReferenceError: useSta is not defined
+[00:58:20.473] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:58:20.567] Server  LOG     ✓ Compiled in 25ms
+[00:58:27.516] Server  LOG     ✓ Compiled in 18ms
+[00:58:30.877] Server  LOG     ✓ Compiled in 16ms
+[00:58:36.464] Server  LOG     ✓ Compiled in 16ms
+[00:58:48.332] Server  LOG     ✓ Compiled in 20ms
+[00:59:25.368] Server  LOG     ✓ Compiled in 22ms
+[01:00:07.476] Server  LOG     ✓ Compiled in 31ms
+[01:00:12.990] Server  LOG     ✓ Compiled in 40ms
+[01:00:14.806] Server  LOG     ✓ Compiled in 16ms
+[01:00:28.452] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render Dashboard MetricsGrid MetricsGrid
+[01:00:28.452] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render Dashboard TrafficChart TrafficChart
+[01:00:44.169] Server  LOG     ✓ Compiled in 65ms
+[01:01:08.449] Server  LOG     ✓ Compiled in 22ms
+[01:01:45.741] Server  LOG     ✓ Compiled in 62ms
+[01:01:47.379] Server  LOG     ✓ Compiled in 16ms
+[01:01:55.567] Server  LOG     ✓ Compiled in 20ms
+[01:02:30.657] Server  LOG     ✓ Compiled in 38ms
+[01:02:48.410] Server  LOG     ✓ Compiled in 59ms
+[01:02:48.512] Browser ERROR   ./components/ui/guestButton.tsx:19:331
 Parsing ecmascript source code failed
-  34 |     <>
-  35 |     <ActivityTable
-> 36 |       <Chatbot metrics={liveMetrics} chartData={liveChart} />
-     |       ^
-  37 |       <div className="flex h-screen bg-background flex-col lg:flex-row">
-  38 |         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-  39 |         <main className="flex-1 lg:ml-64 flex flex-col h-screen overflow-hidden">
+  17 |   return (
+  18 |     <button  disabled={isLoading} onClick={clickToDash}
+> 19 |  className="glow-effect w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-white/5 border border-white/10 text-foreground/80 transition-color duration-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[42px]"      { isLoading ? <div className="flex items-center gap-2 ">
+     |                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^
+  20 |                      <span>Load to Dash</span>
+  21 |                   <Loader />
+  22 |                    </div> : "Guest"}
+
+Expected '...', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[01:02:56.236] Server  LOG     ✓ Compiled in 70ms
+[01:02:56.337] Browser ERROR   ./components/ui/guestButton.tsx:19:329
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <button  disabled={isLoading} onClick={clickToDash}
+> 19 |  className="glow-effect w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-white/5 border border-white/10 text-foreground/80 transition-color duration-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[42px]"      ;{ isLoading ? <div className="flex items-center gap-2 ">
+     |                                                                                                                                                                                                                                                                                                                                         ^
+  20 |                      <span>Load to Dash</span>
+  21 |                   <Loader />
+  22 |                    </div> : "Guest"}
+
+Unexpected token `;`. Expected jsx identifier
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[01:02:57.323] Server  LOG     ✓ Compiled in 51ms
+[01:02:57.424] Browser ERROR   ./components/ui/guestButton.tsx:19:331
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <button  disabled={isLoading} onClick={clickToDash}
+> 19 |  className="glow-effect w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-white/5 border border-white/10 text-foreground/80 transition-color duration-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[42px]"      { isLoading ? <div className="flex items-center gap-2 ">
+     |                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^
+  20 |                      <span>Load to Dash</span>
+  21 |                   <Loader />
+  22 |                    </div> : "Guest"}
+
+Expected '...', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[01:02:58.727] Browser ERROR   ./components/ui/guestButton.tsx:19:332
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <button  disabled={isLoading} onClick={clickToDash}
+> 19 |  className="glow-effect w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-white/5 border border-white/10 text-foreground/80 transition-color duration-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[42px]"      ${ isLoading ? <div className="flex items-center gap-2 ">
+     |                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^
+  20 |                      <span>Load to Dash</span>
+  21 |                   <Loader />
+  22 |                    </div> : "Guest"}
+
+Expected '...', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[01:03:00.919] Browser ERROR   ./components/ui/guestButton.tsx:19:325
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <button  disabled={isLoading} onClick={clickToDash}
+> 19 |  className="glow-effect w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-white/5 border border-white/10 text-foreground/80 transition-color duration-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[42px]"{ isLoading ? <div className="flex items-center gap-2 ">
+     |                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^
+  20 |                      <span>Load to Dash</span>
+  21 |                   <Loader />
+  22 |                    </div> : "Guest"}
+
+Expected '...', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[01:03:29.777] Server  LOG     ✓ Compiled in 26ms
+[01:04:04.578] Server  LOG     ✓ Compiled in 23ms
+[01:06:20.971] Server  LOG     ✓ Compiled in 17ms
+[01:06:39.054] Server  LOG     ✓ Compiled in 17ms
+[01:06:41.250] Server  LOG     ✓ Compiled in 36ms
+[01:07:20.429] Server  LOG     ✓ Compiled in 45ms
+[01:07:26.338] Server  LOG     ✓ Compiled in 57ms
+[01:07:28.891] Server  LOG     ✓ Compiled in 20ms
+[01:07:28.993] Browser ERROR   ./components/ui/guestButton.tsx:23:20
+Parsing ecmascript source code failed
+  21 |                      <span>Load to Dash</span>
+  22 |                   <Loader size= />
+> 23 |                    </div> : "Guest"}
+     |                    ^
+  24 |     </button>
+  25 |   );
+  26 | };
 
 Expression expected
 
 Import traces:
   Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[00:06:14.733] Server  LOG     ✓ Compiled in 54ms
-[00:06:19.845] Server  LOG     ✓ Compiled in 68ms
-[00:06:21.223] Server  LOG     ✓ Compiled in 23ms
-[00:06:24.454] Server  LOG     ✓ Compiled in 68ms
-[00:06:29.900] Server  LOG     ✓ Compiled in 23ms
-[00:06:30.002] Browser ERROR   ./app/dashboard/page.tsx:36:7
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[01:07:28.993] Browser ERROR   ./components/ui/guestButton.tsx:23:21
 Parsing ecmascript source code failed
-  34 |     <>
-  35 |     <al
-> 36 |       <Chatbot metrics={liveMetrics} chartData={liveChart} />
-     |       ^
-  37 |       
-  38 |       <div className="flex h-screen bg-background flex-col lg:flex-row">
-  39 |         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+  21 |                      <span>Load to Dash</span>
+  22 |                   <Loader size= />
+> 23 |                    </div> : "Guest"}
+     |                     ^^^^^^^^^^^^^^^^
+  24 |     </button>
+  25 |   );
+  26 | };
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[01:07:30.104] Browser ERROR   ./components/ui/guestButton.tsx:23:20
+Parsing ecmascript source code failed
+  21 |                      <span>Load to Dash</span>
+  22 |                   <Loader size={} />
+> 23 |                    </div> : "Guest"}
+     |                    ^
+  24 |     </button>
+  25 |   );
+  26 | };
 
 Expression expected
 
 Import traces:
   Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[00:06:31.905] Browser ERROR   ./app/dashboard/page.tsx:36:7
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[01:07:30.104] Browser ERROR   ./components/ui/guestButton.tsx:23:21
 Parsing ecmascript source code failed
-  34 |     <>
-  35 |     <alter
-> 36 |       <Chatbot metrics={liveMetrics} chartData={liveChart} />
-     |       ^
-  37 |       
-  38 |       <div className="flex h-screen bg-background flex-col lg:flex-row">
-  39 |         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+  21 |                      <span>Load to Dash</span>
+  22 |                   <Loader size={} />
+> 23 |                    </div> : "Guest"}
+     |                     ^^^^^^^^^^^^^^^^
+  24 |     </button>
+  25 |   );
+  26 | };
 
-Expression expected
+Unterminated regexp literal
 
 Import traces:
   Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
+    ./components/ui/guestButton.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Client Component Browser]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[00:06:34.634] Browser ERROR   ./app/dashboard/page.tsx:36:7
-Parsing ecmascript source code failed
-  34 |     <>
-  35 |     <Al
-> 36 |       <Chatbot metrics={liveMetrics} chartData={liveChart} />
-     |       ^
-  37 |       
-  38 |       <div className="flex h-screen bg-background flex-col lg:flex-row">
-  39 |         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[00:06:36.172] Browser ERROR   ./app/dashboard/page.tsx:36:7
-Parsing ecmascript source code failed
-  34 |     <>
-  35 |     <Alert
-> 36 |       <Chatbot metrics={liveMetrics} chartData={liveChart} />
-     |       ^
-  37 |       
-  38 |       <div className="flex h-screen bg-background flex-col lg:flex-row">
-  39 |         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/dashboard/page.tsx [Client Component Browser]
-    ./app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/dashboard/page.tsx [Client Component SSR]
-    ./app/dashboard/page.tsx [Server Component]
-[00:06:50.463] Server  LOG     ✓ Compiled in 20ms
-[00:06:50.545] Browser ERROR   uncaughtError: ReferenceError: CustomAlert is not defined
-[00:06:53.653] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:06:54.645] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-      <SegmentViewNode type="page" pagePath="dashboard/...">
-        <SegmentTrieNode>
-        <ClientPageRoot Component={function Dashboard} serverProvidedParams={{...}}>
-          <Dashboard params={Promise} searchParams={Promise}>
-            <CustomAlert>
-            <Chatbot>
-            <div className="flex h-scr...">
-              <Sidebar>
-              <main className="flex-1 lg:...">
-                <Header>
-                <div className="flex-1 ove...">
-                  <MetricsGrid onUpdate={function Dashboard.useCallback[handleMetricsUpdate]}>
-                    <div className="grid grid-...">
-                      <MetricCard title="Total Users" value="12,484" change={12.5} changeLabel="vs last month" trend="up" ...>
-                        <div className="bg-card bo...">
-                          <div className="flex items...">
-                            <div>
-                              <p>
-                              <h3 className="text-2xl md:text-3xl font-bold text-foreground mt-2">
-+                               12,484
--                               12.484
-                            ...
-                          ...
-                      ...
-                  ...
-      ...
-
-[00:07:32.015] Browser LOG     Firebase login failed, checking local storage...
-[00:07:39.204] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render Dashboard MetricsGrid MetricsGrid
-[00:07:39.204] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render Dashboard TrafficChart TrafficChart
+    ./components/ui/guestButton.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Client Component SSR]
+    ./app/auth/auth-signup-form.tsx [Server Component]
+    ./app/auth/register/page.tsx [Server Component]
+[01:07:34.454] Server  LOG     ✓ Compiled in 54ms
+[01:38:16.291] Server  LOG     ✓ Compiled in 50ms
+[01:38:49.941] Server  LOG     ✓ Compiled in 15ms
+[01:38:53.850] Server  LOG     ✓ Compiled in 15ms
+[01:39:32.177] Server  LOG     ✓ Compiled in 19ms
+[01:39:34.734] Server  LOG     ✓ Compiled in 20ms
+[01:39:35.813] Server  LOG     ✓ Compiled in 30ms
+[01:39:43.012] Server  LOG     ✓ Compiled in 15ms
