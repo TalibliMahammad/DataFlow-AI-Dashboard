@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  /* Rəngləri CSS dəyişənlərinə bağlayırıq */
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+--animate-aurora: aurora 20s ease-in-out infinite;
+  /* Radius (Kənarların yumruluğu) */
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+:root {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 217.2 91.2% 59.8%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 224.3 76.3% 48%;
+  --radius: 0.75rem;
+}
+
+/* Bütün elementlərə border rəngini tətbiq etmək üçün */
+@layer base {
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Xüsusi effektlər (v0 dizaynları üçün) */
+@layer utilities {
+  .glassmorphism {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+}
+
+
+@keyframes aurora {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translate(50%, 20%) rotate(10deg) scale(1.2);
+  }
+  66% {
+    transform: translate(-20%, 40%) rotate(-5deg) scale(0.9);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(0deg) scale(1);
+  }
+}
+
+.aurora-bg {
+  animation: aurora 25s ease-in-out infinite !important;
+  will-change: transform;
+}
+
+.aurora-bg {
+  animation: aurora 15s ease-in-out infinite !important;
+  will-change: transform; /* Brauzerə animasiya üçün güc veririk */
+}
+
+/* globals.css */
+
+/* globals.css */
+
+/* Bütün brauzerlərdə scroll-u tamamilə söndürmək üçün klass */
+.no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none !important;  /* IE və Edge */
+    scrollbar-width: none !important;  /* Firefox */
+}

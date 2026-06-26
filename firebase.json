@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "providers": {
+      "emailPassword": true,
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "dataFlow ",
+        "supportEmail": "mtablibov489@gmail.com"
+      }
+    }
+  }
+}

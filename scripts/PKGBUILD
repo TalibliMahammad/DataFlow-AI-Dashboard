@@ -1,0 +1,10 @@
+#!/bin/bash
+# Maintainer: D. Can Celasun <can[at]dcc[dot]im>
+
+pkgname=visual-studio-code-bin
+_pkgname=visual-studio-code
+pkgver=1.109.2
+pkgrel=1
+pkgdesc="Visual Studio Code (vscode): Editor for building and debugging modern :"
+
+# INCOMPLETE: original diff content was truncated. Provide full PKGBUILD to complete.

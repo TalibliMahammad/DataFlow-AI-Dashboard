@@ -1,0 +1,35 @@
+
+# 2026-06-26 20:30:49.324728
++Yes
+
+# 2026-06-26 20:32:28.657967
++hi
+
+# 2026-06-26 20:32:49.550087
++N
+
+# 2026-06-26 20:32:54.880526
++hi
+
+# 2026-06-26 20:36:26.670792
++/add app/dashboard/analytics/page.tsx
+
+# 2026-06-26 20:36:29.242946
++yes
+
+# 2026-06-26 20:36:50.859683
++Sən Next.js, TypeScript və Tailwind CSS mütəxəssisisən. Bizə "DataFlow AI Admin Dashboard" layihəmiz daxilində çox modern, minimalist və 'dark theme' (#09090b) üslubunda bir '/dashboard/analytics' səhifəsi lazımdır. Zəhmət olmasa bu faylı aşağıdakı funksionallıqlarla tam hazır və xətasız şəkildə yaz:
++
++1. Yuxarı sağ hissədə "Today", "Last 7 Days", "Last 30 Days" seçimləri olan, dizaynı layihəyə uyğun modern bir Date Range Dropdown (Açılan menyu) olsun.
++2. 'recharts' kitabxanasından istifadə edərək:
++   - Keçən ayla müqayisəli, altı gradientli mavi/zümrüd rəngində modern bir "Revenue & Conversion Trend" AreaChart qrafiki quraşdır.
++   - Yan tərəfində cihaz növlərinə görə (Desktop, Mobile, Tablet) trafiki göstərən təmiz bir Donut (Dairəvi) qrafik olsun.
++3. Aşağı hissədə ən çox trafik çəkən resursların siyahısını (Route Path, Views, Avg Duration, Trend) göstərən Tailwind ilə bəzədilmiş çox təmiz bir cədvəl (Table) yarat.
++
++Bütün komponentləri 'use client' direktivi ilə, lazımi 'lucide-react' ikonlarını daxil edərək və TypeScript tiplərini (types) düzgün təyin edərək yaz. Kod yarımçıq qalmasın, faylı birbaşa yenilə.
+
+# 2026-06-26 20:41:19.211699
++No, everything looks perfect. Please write the complete code into the file now.
+
+# 2026-06-26 20:43:19.407377
++'/home/mahammad/Documents/Projects/DataFlow-AI-Dashboard/app/dashboard/analytics/page.tsx'
